@@ -35,7 +35,7 @@ jobs:
             - name: Commit & Push changes
               env:
                   GITHUB_TOKEN: ${{ github.token }}
-              uses: panwd70/cloud/git-auto-commit-action@v4.16.0
+              uses: panwd70/cloud/git-auto-commit-action
               with:
                     commit_message: Auto extract by Github Actions at UTC ${{ env.DATE }}
                     create_branch: true
