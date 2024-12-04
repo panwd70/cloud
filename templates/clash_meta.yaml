@@ -105,8 +105,7 @@ rules:
     - DOMAIN-KEYWORD,coze,🚀 节点选择
     - DOMAIN-KEYWORD,gemini,📢 谷歌FCM
     - DOMAIN-KEYWORD,bing,🚀 节点选择
-    - DOMAIN-SUFFIX,x.ai,🤖 OpenAI
-    - DOMAIN-SUFFIX,x.com,🤖 OpenAI
+    - DOMAIN-SUFFIX,x.com,🚀 节点选择
     - DOMAIN-SUFFIX,cloudns.org,🚀 节点选择
     - DOMAIN-SUFFIX,workers.dev,🚀 节点选择
     - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
@@ -711,6 +710,32 @@ rules:
     - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
     - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
     - DOMAIN,mtalk.google.com,📢 谷歌FCM
+    # - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,64.233.188.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,64.233.189.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,74.125.23.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,74.125.24.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,74.125.28.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,74.125.127.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,74.125.137.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,74.125.203.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,74.125.204.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,74.125.206.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,108.177.125.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,142.250.4.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,142.250.31.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,142.250.96.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,172.217.194.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,172.217.218.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,172.217.219.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,172.253.63.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,172.253.122.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
+    # - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
     - DOMAIN-KEYWORD,openai,🤖 OpenAI
     - DOMAIN-SUFFIX,ai.com,🤖 OpenAI
     - DOMAIN-SUFFIX,auth0.com,🤖 OpenAI
@@ -835,12 +860,28 @@ rules:
     - DOMAIN-SUFFIX,itunes.com,🍎 苹果服务
     - DOMAIN-SUFFIX,me.com,🍎 苹果服务
     - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
+    # - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
+    # - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
+    # - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
+    # - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
+    # - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
+    # - IP-CIDR,144.178.36.0/22,🍎 苹果服务,no-resolve
+    # - IP-CIDR,144.178.48.0/20,🍎 苹果服务,no-resolve
+    # - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
+    # - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
+    # - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
     - DOMAIN-SUFFIX,t.me,📲 电报信息
     - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
     - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
     - DOMAIN-SUFFIX,telegram.me,📲 电报信息
     - DOMAIN-SUFFIX,telegram.org,📲 电报信息
     - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
+    # - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
+    # - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
+    # - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+    # - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+    # - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
+    # - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
     - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
     - DOMAIN-SUFFIX,go.com,🌍 国外媒体
     - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
@@ -1038,6 +1079,23 @@ rules:
     - DOMAIN-SUFFIX,nflximg.net,🌍 国外媒体
     - DOMAIN-SUFFIX,nflxso.net,🌍 国外媒体
     - DOMAIN-SUFFIX,nflxvideo.net,🌍 国外媒体
+    - IP-CIDR,8.41.4.0/24,🌍 国外媒体,no-resolve
+    - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
+    - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
+    - IP-CIDR,38.72.126.0/24,🌍 国外媒体,no-resolve
+    - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
+    - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
+    - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
+    - IP-CIDR,69.53.224.0/19,🌍 国外媒体,no-resolve
+    - IP-CIDR,103.87.204.0/22,🌍 国外媒体,no-resolve
+    - IP-CIDR,108.175.32.0/20,🌍 国外媒体,no-resolve
+    - IP-CIDR,185.2.220.0/22,🌍 国外媒体,no-resolve
+    - IP-CIDR,185.9.188.0/22,🌍 国外媒体,no-resolve
+    - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
+    - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
+    - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
+    - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
+    - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
     - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
     - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
     - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
@@ -7062,6 +7120,21 @@ rules:
     - DOMAIN-SUFFIX,amazon.co.jp,🚀 节点选择
     - DOMAIN-SUFFIX,amazon.com,🚀 节点选择
     - DOMAIN-SUFFIX,amazonaws.com,🚀 节点选择
+    - IP-CIDR,13.32.0.0/15,🚀 节点选择,no-resolve
+    - IP-CIDR,13.35.0.0/17,🚀 节点选择,no-resolve
+    - IP-CIDR,18.184.0.0/15,🚀 节点选择,no-resolve
+    - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
+    - IP-CIDR,18.208.0.0/13,🚀 节点选择,no-resolve
+    - IP-CIDR,18.232.0.0/14,🚀 节点选择,no-resolve
+    - IP-CIDR,52.58.0.0/15,🚀 节点选择,no-resolve
+    - IP-CIDR,52.74.0.0/16,🚀 节点选择,no-resolve
+    - IP-CIDR,52.77.0.0/16,🚀 节点选择,no-resolve
+    - IP-CIDR,52.84.0.0/15,🚀 节点选择,no-resolve
+    - IP-CIDR,52.200.0.0/13,🚀 节点选择,no-resolve
+    - IP-CIDR,54.93.0.0/16,🚀 节点选择,no-resolve
+    - IP-CIDR,54.156.0.0/14,🚀 节点选择,no-resolve
+    - IP-CIDR,54.226.0.0/15,🚀 节点选择,no-resolve
+    - IP-CIDR,54.230.156.0/22,🚀 节点选择,no-resolve
     - DOMAIN-KEYWORD,uk-live,🚀 节点选择
     - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
     - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
@@ -7095,6 +7168,20 @@ rules:
     - DOMAIN-SUFFIX,fb.me,🚀 节点选择
     - DOMAIN-SUFFIX,fbcdn.com,🚀 节点选择
     - DOMAIN-SUFFIX,fbcdn.net,🚀 节点选择
+    - IP-CIDR,31.13.24.0/21,🚀 节点选择,no-resolve
+    - IP-CIDR,31.13.64.0/18,🚀 节点选择,no-resolve
+    - IP-CIDR,45.64.40.0/22,🚀 节点选择,no-resolve
+    - IP-CIDR,66.220.144.0/20,🚀 节点选择,no-resolve
+    - IP-CIDR,69.63.176.0/20,🚀 节点选择,no-resolve
+    - IP-CIDR,69.171.224.0/19,🚀 节点选择,no-resolve
+    - IP-CIDR,74.119.76.0/22,🚀 节点选择,no-resolve
+    - IP-CIDR,103.4.96.0/22,🚀 节点选择,no-resolve
+    - IP-CIDR,129.134.0.0/17,🚀 节点选择,no-resolve
+    - IP-CIDR,157.240.0.0/17,🚀 节点选择,no-resolve
+    - IP-CIDR,173.252.64.0/18,🚀 节点选择,no-resolve
+    - IP-CIDR,179.60.192.0/22,🚀 节点选择,no-resolve
+    - IP-CIDR,185.60.216.0/22,🚀 节点选择,no-resolve
+    - IP-CIDR,204.15.20.0/22,🚀 节点选择,no-resolve
     - DOMAIN-SUFFIX,github.com,🚀 节点选择
     - DOMAIN-SUFFIX,github.io,🚀 节点选择
     - DOMAIN-SUFFIX,githubapp.com,🚀 节点选择
@@ -7200,12 +7287,38 @@ rules:
     - DOMAIN-KEYWORD,google,🚀 节点选择
     - DOMAIN-KEYWORD,gstatic,🚀 节点选择
     - DOMAIN-KEYWORD,www.google,🚀 节点选择
+    - IP-CIDR,74.125.0.0/16,🚀 节点选择,no-resolve
+    - IP-CIDR,173.194.0.0/16,🚀 节点选择,no-resolve
+    - IP-CIDR,120.232.181.162/32,🚀 节点选择,no-resolve
+    - IP-CIDR,120.241.147.226/32,🚀 节点选择,no-resolve
+    - IP-CIDR,120.253.253.226/32,🚀 节点选择,no-resolve
+    - IP-CIDR,120.253.255.162/32,🚀 节点选择,no-resolve
+    - IP-CIDR,120.253.255.34/32,🚀 节点选择,no-resolve
+    - IP-CIDR,120.253.255.98/32,🚀 节点选择,no-resolve
+    - IP-CIDR,180.163.150.162/32,🚀 节点选择,no-resolve
+    - IP-CIDR,180.163.150.34/32,🚀 节点选择,no-resolve
+    - IP-CIDR,180.163.151.162/32,🚀 节点选择,no-resolve
+    - IP-CIDR,180.163.151.34/32,🚀 节点选择,no-resolve
+    - IP-CIDR,203.208.39.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,203.208.40.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,203.208.41.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,203.208.43.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,203.208.50.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,220.181.174.162/32,🚀 节点选择,no-resolve
+    - IP-CIDR,220.181.174.226/32,🚀 节点选择,no-resolve
+    - IP-CIDR,220.181.174.34/32,🚀 节点选择,no-resolve
     - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
     - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
     - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
     - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
     - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
     - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
+    - IP-CIDR,1.201.0.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,27.0.236.0/22,🚀 节点选择,no-resolve
+    - IP-CIDR,103.27.148.0/22,🚀 节点选择,no-resolve
+    - IP-CIDR,103.246.56.0/22,🚀 节点选择,no-resolve
+    - IP-CIDR,110.76.140.0/22,🚀 节点选择,no-resolve
+    - IP-CIDR,113.61.104.0/22,🚀 节点选择,no-resolve
     - DOMAIN-SUFFIX,lin.ee,🚀 节点选择
     - DOMAIN-SUFFIX,line-apps.com,🚀 节点选择
     - DOMAIN-SUFFIX,line-cdn.net,🚀 节点选择
@@ -7213,6 +7326,14 @@ rules:
     - DOMAIN-SUFFIX,line.me,🚀 节点选择
     - DOMAIN-SUFFIX,line.naver.jp,🚀 节点选择
     - DOMAIN-SUFFIX,nhncorp.jp,🚀 节点选择
+    - IP-CIDR,103.2.28.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,103.2.30.0/23,🚀 节点选择,no-resolve
+    - IP-CIDR,119.235.224.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,119.235.232.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,119.235.235.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
+    - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
+    - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
     - DOMAIN-KEYWORD,1drv,🚀 节点选择
     - DOMAIN-KEYWORD,onedrive,🚀 节点选择
     - DOMAIN-KEYWORD,skydrive,🚀 节点选择
@@ -7290,8 +7411,29 @@ rules:
     - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
     - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
     - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
+    - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
+    - IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
+    - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
+    - IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
+    - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
+    - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
     - DOMAIN-SUFFIX,terabox.com,🚀 节点选择
     - DOMAIN-SUFFIX,teraboxcdn.com,🚀 节点选择
+    - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
+    - IP-CIDR,34.224.0.0/12,🚀 节点选择,no-resolve
+    - IP-CIDR,54.242.0.0/15,🚀 节点选择,no-resolve
+    - IP-CIDR,50.22.198.204/30,🚀 节点选择,no-resolve
+    - IP-CIDR,208.43.122.128/27,🚀 节点选择,no-resolve
+    - IP-CIDR,108.168.174.0/16,🚀 节点选择,no-resolve
+    - IP-CIDR,173.192.231.32/27,🚀 节点选择,no-resolve
+    - IP-CIDR,158.85.5.192/27,🚀 节点选择,no-resolve
+    - IP-CIDR,174.37.243.0/16,🚀 节点选择,no-resolve
+    - IP-CIDR,158.85.46.128/27,🚀 节点选择,no-resolve
+    - IP-CIDR,173.192.222.160/27,🚀 节点选择,no-resolve
+    - IP-CIDR,184.173.128.0/17,🚀 节点选择,no-resolve
+    - IP-CIDR,158.85.224.160/27,🚀 节点选择,no-resolve
+    - IP-CIDR,75.126.150.0/16,🚀 节点选择,no-resolve
+    - IP-CIDR,69.171.235.0/16,🚀 节点选择,no-resolve
     - DOMAIN-SUFFIX,mediawiki.org,🚀 节点选择
     - DOMAIN-SUFFIX,wikibooks.org,🚀 节点选择
     - DOMAIN-SUFFIX,wikidata.org,🚀 节点选择
@@ -7310,4 +7452,5 @@ rules:
     - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
     - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
     - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
+    - GEOIP,CN,🎯 全球直连
     - MATCH,🐟 漏网之鱼
