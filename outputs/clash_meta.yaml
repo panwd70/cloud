@@ -21,11 +21,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: a23.984952.xyz
+  servername: a25.984952.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: a23.984952.xyz
+      Host: a25.984952.xyz
 - name: 🏳 Unknown-vmess | 0-2
   type: vmess
   server: 104.18.114.2
@@ -36,11 +36,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: a23.984952.xyz
+  servername: a25.984952.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: a23.984952.xyz
+      Host: a25.984952.xyz
 - name: 🏳 Unknown-vmess | 1-1
   type: vmess
   server: 104.18.114.1
@@ -81,11 +81,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: w24.337129.xyz
+  servername: w26.337129.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: w24.337129.xyz
+      Host: w26.337129.xyz
 - name: 🏳 Unknown-vmess | 2-2
   type: vmess
   server: 104.21.238.2
@@ -96,11 +96,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: w24.337129.xyz
+  servername: w26.337129.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: w24.337129.xyz
+      Host: w26.337129.xyz
 - name: 🏳 Unknown-vmess | 0-0
   type: vmess
   server: 104.21.238.35
@@ -115,7 +115,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: x79.121845.xyz
+      Host: x80.121845.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -135,7 +135,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: y20.121845.xyz
+      Host: y21.121845.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -155,7 +155,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: z93.121845.xyz
+      Host: z94.121845.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
