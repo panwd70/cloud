@@ -29,36 +29,42 @@ proxies:
     early-data-header-name: Sec-WebSocket-Protocol
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
-- name: 🏳 Unknown-vmess | 1-1
+- name: 🇺🇸 US-vmess | 1-1
   type: vmess
-  server: 104.18.114.1
-  port: 2086
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  server: 208.87.243.167
+  port: 10001
+  uuid: 00968709-0e10-4389-beb7-a489b5ab1b9d
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
+  servername: 10001.661363.xyz
   network: ws
-  servername: p51.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: p51.164748.xyz
-- name: 🏳 Unknown-vmess | 1-2
+      Host: 10001.661363.xyz
+    early-data-header-name: Sec-WebSocket-Protocol
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: true
+- name: 🇺🇸 US-vmess | 1-2
   type: vmess
-  server: 104.18.114.2
-  port: 2086
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  server: 208.87.243.167
+  port: 10002
+  uuid: 00968709-0e10-4389-beb7-a489b5ab1b9d
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
+  servername: 10002.661363.xyz
   network: ws
-  servername: p51.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: p51.164748.xyz
+      Host: 10002.661363.xyz
+    early-data-header-name: Sec-WebSocket-Protocol
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: true
 - name: 🏳 Unknown-vmess | 2-1
   type: vmess
   server: 104.18.114.1
@@ -122,7 +128,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: y140.164748.xyz
+      Host: y141.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -142,7 +148,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: z229.164748.xyz
+      Host: z230.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -155,8 +161,8 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -169,8 +175,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -182,8 +188,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -195,8 +201,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -208,8 +214,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -221,8 +227,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -234,8 +240,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -247,8 +253,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -260,8 +266,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -273,8 +279,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -286,8 +292,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
@@ -308,8 +314,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇺🇸 US-vmess | 0-1
-  - 🏳 Unknown-vmess | 1-1
-  - 🏳 Unknown-vmess | 1-2
+  - 🇺🇸 US-vmess | 1-1
+  - 🇺🇸 US-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
   - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
