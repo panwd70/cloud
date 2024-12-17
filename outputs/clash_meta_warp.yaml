@@ -30,18 +30,36 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇨🇳 TW-hysteria | 0-1
-  type: hysteria
-  server: 1.162.11.157
-  port: 10045
-  ports: 15000-24000
-  auth_str: github.com/Alvin9999
-  alpn:
-  - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 2 Mbps
-  down: 2 Mbps
+- name: 🏳 Unknown-vmess | 0-1
+  type: vmess
+  server: 104.18.114.1
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: a34.164748.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: a34.164748.xyz
+- name: 🏳 Unknown-vmess | 0-2
+  type: vmess
+  server: 104.18.114.2
+  port: 2086
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: a34.164748.xyz
+  ws-opts:
+    path: github.com/Alvin9999
+    headers:
+      Host: a34.164748.xyz
 - name: 🏳 Unknown-vmess | 1-1
   type: vmess
   server: 104.18.114.1
@@ -52,11 +70,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: p29.164748.xyz
+  servername: p30.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: p29.164748.xyz
+      Host: p30.164748.xyz
 - name: 🏳 Unknown-vmess | 1-2
   type: vmess
   server: 104.18.114.2
@@ -67,11 +85,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: p29.164748.xyz
+  servername: p30.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: p29.164748.xyz
+      Host: p30.164748.xyz
 - name: 🏳 Unknown-vmess | 2-1
   type: vmess
   server: 104.18.114.1
@@ -82,11 +100,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: w32.164748.xyz
+  servername: w33.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: w32.164748.xyz
+      Host: w33.164748.xyz
 - name: 🏳 Unknown-vmess | 2-2
   type: vmess
   server: 104.18.114.2
@@ -97,11 +115,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: w32.164748.xyz
+  servername: w33.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: w32.164748.xyz
+      Host: w33.164748.xyz
 - name: 🇨🇳 TW-vmess | 0-0
   type: vmess
   server: 36.226.243.107
@@ -135,7 +153,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: y120.164748.xyz
+      Host: y121.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -155,7 +173,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: z202.164748.xyz
+      Host: z203.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -168,7 +186,8 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -182,7 +201,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -196,7 +216,8 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -210,7 +231,8 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -224,7 +246,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -238,7 +261,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -252,7 +276,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -266,7 +291,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -280,7 +306,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -294,7 +321,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -308,7 +336,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -322,7 +351,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -336,7 +366,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -350,7 +381,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
@@ -373,7 +405,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇨🇳 TW-hysteria | 0-1
+  - 🏳 Unknown-vmess | 0-1
+  - 🏳 Unknown-vmess | 0-2
   - 🏳 Unknown-vmess | 1-1
   - 🏳 Unknown-vmess | 1-2
   - 🏳 Unknown-vmess | 2-1
