@@ -104,7 +104,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: y208.164748.xyz
+      Host: y209.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
@@ -124,7 +124,7 @@ proxies:
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: z297.164748.xyz
+      Host: z298.164748.xyz
   grpc-opts:
     serviceName: /
   h2-opts:
