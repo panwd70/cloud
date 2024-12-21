@@ -13,7 +13,7 @@ A python script to extract ChromeGo Proxies
 
 ## 使用说明
 ### 订阅链接：
-> 本项目已配置Github Actions自动运行，最近提取于：`UTC 2024-12-21 14:37:00`
+> 本项目已配置Github Actions自动运行，最近提取于：`UTC 2024-12-21 15:16:38`
 
 - Clash Meta (不带WARP):
   
