@@ -51,11 +51,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m370.164748.xyz
+  servername: m371.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m370.164748.xyz
+      Host: m371.164748.xyz
 - name: 🏳 Unknown-vmess | 2-2
   type: vmess
   server: 104.18.114.2
@@ -66,15 +66,15 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m370.164748.xyz
+  servername: m371.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m370.164748.xyz
+      Host: m371.164748.xyz
 - name: 🇨🇳 TW-vmess | 0-0
   type: vmess
   server: 220.136.144.137
-  port: 50001
+  port: 50002
   uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
   alterId: 0
   cipher: auto
