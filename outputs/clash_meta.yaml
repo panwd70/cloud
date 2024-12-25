@@ -21,11 +21,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m116.164748.xyz
+  servername: m373.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m116.164748.xyz
+      Host: m373.164748.xyz
 - name: 🏳 Unknown-vmess | 0-2
   type: vmess
   server: 104.18.114.2
@@ -36,41 +36,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m116.164748.xyz
+  servername: m373.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m116.164748.xyz
-- name: 🏳 Unknown-vmess | 2-1
-  type: vmess
-  server: 104.18.114.1
-  port: 2086
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: m372.164748.xyz
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: m372.164748.xyz
-- name: 🏳 Unknown-vmess | 2-2
-  type: vmess
-  server: 104.18.114.2
-  port: 2086
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: m372.164748.xyz
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: m372.164748.xyz
+      Host: m373.164748.xyz
 - name: 🇨🇳 TW-vmess | 0-0
   type: vmess
   server: 220.136.144.137
@@ -98,8 +68,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: ♻️ 自动选择
   type: url-test
@@ -109,8 +77,6 @@ proxy-groups:
   proxies:
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: 📺 哔哩哔哩
   type: select
@@ -119,8 +85,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: 🌏 国内媒体
   type: select
@@ -129,8 +93,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: 🌍 国外媒体
   type: select
@@ -139,8 +101,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: 📲 电报信息
   type: select
@@ -149,8 +109,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -159,8 +117,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -169,8 +125,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: 🍎 苹果服务
   type: select
@@ -179,8 +133,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: 📢 谷歌FCM
   type: select
@@ -189,8 +141,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: 🤖 OpenAI
   type: select
@@ -199,8 +149,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 - name: 🎯 全球直连
   type: select
@@ -218,8 +166,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🏳 Unknown-vmess | 2-1
-  - 🏳 Unknown-vmess | 2-2
   - 🇨🇳 TW-vmess | 0-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
