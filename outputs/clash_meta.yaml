@@ -21,11 +21,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m384.164748.xyz
+  servername: m385.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m384.164748.xyz
+      Host: m385.164748.xyz
 - name: 🏳 Unknown-vmess | 0-2
   type: vmess
   server: 104.18.114.2
@@ -36,11 +36,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m384.164748.xyz
+  servername: m385.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m384.164748.xyz
+      Host: m385.164748.xyz
 - name: 🇨🇳 TW-vmess | 0-0
   type: vmess
   server: 220.136.144.137
