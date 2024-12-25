@@ -40,11 +40,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m393.164748.xyz
+  servername: m394.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m393.164748.xyz
+      Host: m394.164748.xyz
 - name: 🏳 Unknown-vmess | 0-2
   type: vmess
   server: 104.18.114.2
@@ -55,30 +55,26 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m393.164748.xyz
+  servername: m394.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m393.164748.xyz
-- name: 🇨🇳 TW-vmess | 0-0
-  type: vmess
-  server: 220.136.144.137
-  port: 50002
+      Host: m394.164748.xyz
+- name: 🇨🇳 TW-vless | 0-0
+  type: vless
+  server: 36.226.252.19
+  port: 56870
   uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
-  alterId: 0
-  cipher: auto
-  tls: false
-  servername: ''
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: github.com/Alvin9999
-    headers: {}
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  network: tcp
+  client-fingerprint: chrome
   grpc-opts:
-    serviceName: /
-  h2-opts:
-    path: /
-    host: []
+    grpc-service-name: /
+  reality-opts:
+    public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
+    short-id: 239c3cef
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -88,7 +84,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -97,7 +93,7 @@ proxy-groups:
   proxies:
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -106,7 +102,7 @@ proxy-groups:
   proxies:
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -115,7 +111,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -124,7 +120,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -133,7 +129,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -142,7 +138,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -151,7 +147,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -160,7 +156,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -169,7 +165,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -178,7 +174,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -187,7 +183,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -196,7 +192,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -205,7 +201,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -223,7 +219,7 @@ proxy-groups:
   - ☁ WARP
   - 🏳 Unknown-vmess | 0-1
   - 🏳 Unknown-vmess | 0-2
-  - 🇨🇳 TW-vmess | 0-0
+  - 🇨🇳 TW-vless | 0-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
