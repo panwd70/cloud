@@ -21,11 +21,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m520.164748.xyz
+  servername: m521.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m520.164748.xyz
+      Host: m521.164748.xyz
 - name: 🏳 Unknown-vmess | 0-2
   type: vmess
   server: 104.18.114.2
@@ -36,11 +36,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: m520.164748.xyz
+  servername: m521.164748.xyz
   ws-opts:
     path: github.com/Alvin9999
     headers:
-      Host: m520.164748.xyz
+      Host: m521.164748.xyz
 - name: 🇨🇳 TW-vless | 0-0
   type: vless
   server: 36.226.252.19
