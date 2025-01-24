@@ -30,36 +30,44 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🏳 Unknown-vmess | 0-1
-  type: vmess
-  server: 104.18.114.1
-  port: 2086
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: m1656.164748.xyz
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: m1656.164748.xyz
-- name: 🏳 Unknown-vmess | 0-2
-  type: vmess
-  server: 104.18.114.2
-  port: 2086
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: m1656.164748.xyz
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: m1656.164748.xyz
+- name: 🇫🇷 FR-hysteria2 | 1-1
+  type: hysteria2
+  server: 195.154.200.40
+  port: 42259
+  ports: 20000-30000
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇺🇸 US-hysteria | 2-1
+  type: hysteria
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 FR-hysteria | 3-1
+  type: hysteria
+  server: 195.154.200.178
+  port: 10312
+  auth-str: dongtaiwang.com
+  obfs: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇨🇳 TW-vless | 0-0
   type: vless
   server: 1.162.51.106
@@ -82,8 +90,9 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
@@ -91,8 +100,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: ⚖ 负载均衡
   type: load-balance
@@ -100,8 +110,9 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: ☁ WARP前置节点
   type: select
@@ -109,8 +120,9 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 巴哈姆特
   type: select
@@ -118,8 +130,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
@@ -127,8 +140,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: 🌏 国内媒体
   type: select
@@ -136,8 +150,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: 🌍 国外媒体
   type: select
@@ -145,8 +160,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: 📲 电报信息
   type: select
@@ -154,8 +170,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -163,8 +180,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -172,8 +190,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: 🍎 苹果服务
   type: select
@@ -181,8 +200,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
@@ -190,8 +210,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: 🤖 OpenAI
   type: select
@@ -199,8 +220,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 - name: 🎯 全球直连
   type: select
@@ -217,8 +239,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🏳 Unknown-vmess | 0-1
-  - 🏳 Unknown-vmess | 0-2
+  - 🇫🇷 FR-hysteria2 | 1-1
+  - 🇺🇸 US-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 3-1
   - 🇨🇳 TW-vless | 0-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
