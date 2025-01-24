@@ -49,21 +49,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇨🇳 TW-vless | 0-0
-  type: vless
-  server: 1.162.51.106
-  port: 37898
-  uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.yahoo.com
-  network: tcp
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /
-  reality-opts:
-    public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
-    short-id: e12d7fdb
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -73,7 +58,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -83,7 +67,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -92,7 +75,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -101,7 +83,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -110,7 +91,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -119,7 +99,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -128,7 +107,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -137,7 +115,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -146,7 +123,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -155,7 +131,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -164,7 +139,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -182,7 +156,6 @@ proxy-groups:
   - 🇫🇷 FR-hysteria2 | 1-1
   - 🇺🇸 US-hysteria | 2-1
   - 🇫🇷 FR-hysteria | 3-1
-  - 🇨🇳 TW-vless | 0-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
