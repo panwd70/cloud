@@ -5,3 +5,4 @@ hysteria://208.87.243.187:63721/?protocol=udp&insecure=1&peer=apple.com&auth=don
 hysteria2://dongtaiwang.com@195.154.33.70:42259/?sni=www.bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 0-0
 hysteria2://dongtaiwang.com@108.181.5.130:7329/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 1-0
 vless://095ad0e3-9ed9-4346-9108-58b40e664f5c@185.22.153.75:21315?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8&sid=d019a9ad&type=tcp&serviceName=/&host=&path=#🇷🇺 RU-vless | 0-0
+vless://2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9@185.22.155.105:34077?encryption=none&flow=xtls-rprx-vision&security=reality&sni=aws.amazon.com&fp=chrome&pbk=XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0&sid=&type=tcp&serviceName=/&host=&path=#🇷🇺 RU-vless | 2-0
