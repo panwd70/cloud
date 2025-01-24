@@ -510,10 +510,10 @@ if __name__ == "__main__":
     process_urls("./urls/clash_meta_urls.txt", process_clash_meta)
 
     # 处理hysteria urls
-    # process_urls("./urls/hysteria_urls.txt", process_hysteria)
+    process_urls("./urls/hysteria_urls.txt", process_hysteria)
 
     # 处理hysteria2 urls
-    # process_urls("./urls/hysteria2_urls.txt", process_hysteria2)
+    process_urls("./urls/hysteria2_urls.txt", process_hysteria2)
 
     # 处理Xray urls
     process_urls("./urls/xray_urls.txt", process_xray)
