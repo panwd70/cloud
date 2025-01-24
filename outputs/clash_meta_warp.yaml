@@ -55,6 +55,21 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇷🇺 RU-vless | 0-0
+  type: vless
+  server: 185.22.153.75
+  port: 21315
+  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  network: tcp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
+    short-id: d019a9ad
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -64,6 +79,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -72,6 +88,7 @@ proxy-groups:
   proxies:
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -80,6 +97,7 @@ proxy-groups:
   proxies:
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -88,6 +106,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -96,6 +115,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -104,6 +124,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -112,6 +133,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -120,6 +142,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -128,6 +151,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -136,6 +160,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -144,6 +169,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -152,6 +178,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -160,6 +187,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -168,6 +196,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -185,6 +214,7 @@ proxy-groups:
   - ☁ WARP
   - 🇫🇷 FR-hysteria2 | 0-1
   - 🇺🇸 US-hysteria | 1-1
+  - 🇷🇺 RU-vless | 0-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
