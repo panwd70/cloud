@@ -103,6 +103,7 @@ rules:
     - DOMAIN-KEYWORD,ai.google.dev,📢 谷歌FCM
     - DOMAIN-KEYWORD,aistudio.google.com,📢 谷歌FCM
     - DOMAIN-KEYWORD,coze,🚀 节点选择
+    - DOMAIN-KEYWORD,google,📢 谷歌FCM
     - DOMAIN-KEYWORD,gemini,📢 谷歌FCM
     - DOMAIN-KEYWORD,bing,🚀 节点选择
     - DOMAIN-SUFFIX,x.com,🚀 节点选择
