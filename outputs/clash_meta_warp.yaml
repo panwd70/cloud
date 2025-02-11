@@ -110,7 +110,22 @@ proxies:
   password: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
-- name: 🇷🇺 RU-vless | 0-0
+- name: 🇫🇷 FR-vless | 0-0
+  type: vless
+  server: 62.210.125.97
+  port: 65280
+  uuid: 5bf1ced2-27ad-4908-83db-0b1f9a4f6047
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  network: tcp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: 7NC6hW-P41pciUEhAylbleVf4a2ZStJVuJpjmZgp7iQ
+    short-id: 5628b8f0
+- name: 🇷🇺 RU-vless | 1-0
   type: vless
   server: 185.22.153.75
   port: 21315
@@ -154,7 +169,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: ♻️ 自动选择
   type: url-test
@@ -169,7 +185,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: ⚖ 负载均衡
   type: load-balance
@@ -184,7 +201,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: ☁ WARP前置节点
   type: select
@@ -199,7 +217,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: 📺 巴哈姆特
   type: select
@@ -214,7 +233,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: 📺 哔哩哔哩
   type: select
@@ -229,7 +249,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: 🌏 国内媒体
   type: select
@@ -244,7 +265,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: 🌍 国外媒体
   type: select
@@ -259,7 +281,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: 📲 电报信息
   type: select
@@ -274,7 +297,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -289,7 +313,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -304,7 +329,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: 🍎 苹果服务
   type: select
@@ -319,7 +345,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: 📢 谷歌FCM
   type: select
@@ -334,7 +361,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: 🤖 OpenAI
   type: select
@@ -349,7 +377,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 - name: 🎯 全球直连
   type: select
@@ -373,7 +402,8 @@ proxy-groups:
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇫🇷 FR-vless | 0-0
+  - 🇷🇺 RU-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
