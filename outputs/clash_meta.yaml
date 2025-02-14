@@ -23,19 +23,19 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇺🇸 US-hysteria | 1-1
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  ports: 20000-30000
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: 🇺🇸 US-tuic | 1-1
+  server: 108.181.5.131
+  port: 34008
+  type: tuic
+  uuid: f84c91a4-0125-4495-82f3-732cd0a0bba8
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: 🇫🇷 FR-hysteria | 2-1
   type: hysteria
   server: 195.154.200.178
@@ -57,10 +57,24 @@ proxies:
   password: 074f49ce-e698-4eca-9a7f-25b480737c5d
   alpn:
   - h3
-  disable-sni: true
+  sni: www.bing.com
+  skip-cert-verify: true
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
+- name: 🇺🇸 US-hysteria | 4-1
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  ports: 20000-30000
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇫🇷 FR-Hysteria | 0-0
   type: hysteria
   server: 195.154.200.40
@@ -155,9 +169,10 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -172,9 +187,10 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -188,9 +204,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -204,9 +221,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -220,9 +238,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -236,9 +255,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -252,9 +272,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -268,9 +289,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -284,9 +306,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -300,9 +323,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -316,9 +340,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
@@ -341,9 +366,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
-  - 🇺🇸 US-hysteria | 1-1
+  - 🇺🇸 US-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🇷🇺 RU-tuic | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria2 | 0-0
