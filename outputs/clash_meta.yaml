@@ -137,6 +137,21 @@ proxies:
   reality-opts:
     public-key: CORDH3FlQivimoVRhU_ZEUFzI-mT3Ko9CqTr7_CPtXw
     short-id: 694212ed
+- name: 🇫🇷 FR-vless | 1-0
+  type: vless
+  server: 51.158.205.126
+  port: 24957
+  uuid: ef1fdecb-e56f-4996-9b6a-da7ddb7f7c8d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  network: tcp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: Ok7Mg4VmHT4Typ9HydPSmHI55BgLONFk5ppLGiL8n1A
+    short-id: 4b4d9d72
 - name: 🇺🇸 US-vless | 2-0
   type: vless
   server: 208.115.249.104
@@ -184,6 +199,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: ♻️ 自动选择
@@ -203,6 +219,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: 📺 哔哩哔哩
@@ -221,6 +238,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: 🌏 国内媒体
@@ -239,6 +257,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: 🌍 国外媒体
@@ -257,6 +276,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: 📲 电报信息
@@ -275,6 +295,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: Ⓜ️ 微软云盘
@@ -293,6 +314,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: Ⓜ️ 微软服务
@@ -311,6 +333,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: 🍎 苹果服务
@@ -329,6 +352,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: 📢 谷歌FCM
@@ -347,6 +371,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: 🤖 OpenAI
@@ -365,6 +390,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 - name: 🎯 全球直连
@@ -392,6 +418,7 @@ proxy-groups:
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
   - 🇺🇸 US-vless | 0-0
+  - 🇫🇷 FR-vless | 1-0
   - 🇺🇸 US-vless | 2-0
   - 🇷🇺 RU-vless | 3-0
 rules:
