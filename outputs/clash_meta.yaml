@@ -14,7 +14,7 @@ proxies:
 - name: 🇳🇱 NL-hysteria | 0-1
   type: hysteria
   server: 62.210.10.113
-  port: 55690
+  port: 22662
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -39,7 +39,7 @@ proxies:
 - name: 🇫🇷 FR-hysteria | 2-1
   type: hysteria
   server: 195.154.200.178
-  port: 44557
+  port: 46938
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
