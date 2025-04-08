@@ -36,18 +36,13 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 🇫🇷 FR-hysteria | 2-1
-  type: hysteria
-  server: 195.154.200.178
-  port: 46938
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: 🇺🇸 US-mieru | 2-1
+  type: mieru
+  server: 108.181.23.41
+  port: 28676
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
 - name: 🇺🇸 US-hysteria | 3-1
   type: hysteria
   server: 108.181.24.77
@@ -176,7 +171,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -195,7 +190,7 @@ proxy-groups:
   proxies:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -213,7 +208,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -231,7 +226,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -249,7 +244,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -267,7 +262,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -285,7 +280,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -303,7 +298,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -321,7 +316,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -339,7 +334,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -357,7 +352,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
@@ -384,7 +379,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇺🇸 US-mieru | 2-1
   - 🇺🇸 US-hysteria | 3-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
