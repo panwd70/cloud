@@ -62,7 +62,14 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: 🇺🇸 US-hysteria | 3-1
+- name: 🇷🇺 RU-mieru | 3-1
+  type: mieru
+  server: 185.22.155.105
+  port: 25622
+  transport: TCP
+  username: dongtaiwang.com
+  password: dongtaiwang.com
+- name: 🇺🇸 US-hysteria | 4-1
   type: hysteria
   server: 108.181.24.77
   port: 11512
@@ -192,7 +199,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -211,7 +219,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -230,7 +239,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -249,7 +259,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -268,7 +279,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -287,7 +299,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -306,7 +319,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -325,7 +339,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -344,7 +359,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -363,7 +379,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -382,7 +399,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -401,7 +419,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -420,7 +439,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -439,7 +459,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
@@ -467,7 +488,8 @@ proxy-groups:
   - 🇳🇱 NL-hysteria | 0-1
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🇷🇺 RU-mieru | 3-1
+  - 🇺🇸 US-hysteria | 4-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 1-0
   - 🇺🇸 US-Hysteria | 3-0
