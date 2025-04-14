@@ -144,6 +144,13 @@ proxies:
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇷🇺 RU-Hysteria2 | 3-0
+  type: hysteria2
+  server: 46.17.41.5
+  port: 12904
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
 - name: 🇺🇸 US-vless | 0-0
   type: vless
   server: 108.181.3.68
@@ -207,6 +214,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -227,6 +235,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -247,6 +256,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -267,6 +277,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -287,6 +298,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -307,6 +319,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -327,6 +340,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -347,6 +361,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -367,6 +382,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -387,6 +403,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -407,6 +424,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -427,6 +445,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -447,6 +466,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -467,6 +487,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
@@ -496,6 +517,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
+  - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇫🇷 FR-vless | 1-0
   - 🇷🇺 RU-vless | 3-0
