@@ -114,14 +114,14 @@ proxies:
 - name: 🇺🇸 US-Hysteria2 | 1-0
   type: hysteria2
   server: 108.181.5.130
-  port: 15544
+  port: 65232
   password: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
 - name: 🇫🇷 FR-Hysteria2 | 2-0
   type: hysteria2
   server: 51.159.226.1
-  port: 61770
+  port: 43496
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
