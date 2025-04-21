@@ -196,7 +196,6 @@ proxy-groups:
   - vmess-tls-argo-s2-panwd
   - vmess-argo-s2-panwd
   - ♻️ 自动选择
-  - 🎯 全球直连
 # Updated ♻️ 自动选择 to include new proxies
 - name: ♻️ 自动选择
   type: url-test
@@ -214,56 +213,6 @@ proxy-groups:
   - vmess-ws-s2-panwd
   - vmess-tls-argo-s2-panwd
   - vmess-argo-s2-panwd
-# Rest of the groups from file 1 (🤖 OpenAI modified slightly for redundancy)
-# - name: 🌍 国外媒体
-  # type: select
-  # proxies:
-  # - 🚀 节点选择
-  # - 🎯 全球直连
-# - name: 📲 电报信息
-  # type: select
-  # proxies:
-  # - 🚀 节点选择
-  # - 🎯 全球直连
-# - name: Ⓜ️ 微软云盘
-  # type: select
-  # proxies:
-  # - 🎯 全球直连
-  # - 🚀 节点选择
-# - name: Ⓜ️ 微软服务
-  # type: select
-  # proxies:
-  # - 🎯 全球直连
-  # - 🚀 节点选择
-# - name: 🍎 苹果服务
-  # type: select
-  # proxies:
-  # - 🚀 节点选择
-  # - 🎯 全球直连
-# - name: 📢 谷歌FCM
-  # type: select
-  # proxies:
-  # - 🚀 节点选择
-  # - 🎯 全球直连
-# - name: 🤖 OpenAI
-  # type: select
-  # proxies:
-  # - 🚀 节点选择
-  # - 🎯 全球直连
-# - name: 🎯 全球直连
-  # type: select
-  # proxies:
-  # - DIRECT
-# - name: 🛑 全球拦截
-  # type: select
-  # proxies:
-  # - REJECT
-  # - DIRECT
-# - name: 🐟 漏网之鱼
-  # type: select
-  # proxies:
-  # - 🚀 节点选择
-  # - 🎯 全球直连
 
 # Add rule-providers section from the second input
 rule-providers:
