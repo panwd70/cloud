@@ -136,19 +136,19 @@ proxies:
     client-fingerprint: chrome
   - name: vmess-ws-s2-panwd
     type: vmess
-    server: 213.189.58.89
-    port: 59114
+    server: visa.cn
+    port: 80
     uuid: 302e0ea9-fa91-4236-a4f4-5a72b8e35999
     alterId: 0
     cipher: auto
     udp: true
     tls: false
     network: ws
-    servername: www.bing.com
+    servername: cdn.panwd.dpdns.org
     ws-opts:
       path: "/302e0ea9-fa91-4236-a4f4-5a72b8e35999-vm"
       headers:
-        Host: www.bing.com
+        Host: cdn.panwd.dpdns.org
   - name: vmess-tls-argo-s2-panwd
     type: vmess
     server: www.visa.com.hk
