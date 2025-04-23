@@ -167,7 +167,7 @@ proxies:
   - name: vmess-argo-s2-panwd
     type: vmess
     server: www.visa.com.hk
-    port: 8880
+    port: 80
     uuid: 302e0ea9-fa91-4236-a4f4-5a72b8e35999
     alterId: 0
     cipher: auto
