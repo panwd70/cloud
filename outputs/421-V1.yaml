@@ -295,5 +295,6 @@ rules:
     # Keeping common direct rules here as they are robust
     - GEOIP,LAN,DIRECT
     - GEOIP,CN,DIRECT
+    - DOMAIN-SUFFIX,polytecgroup.com,DIRECT
     # The final match rule using the combined fallback group
     - MATCH,🚀 节点选择
