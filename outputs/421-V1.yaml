@@ -279,9 +279,17 @@ rule-providers:
         url: https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/nsfw.txt
         path: ./ruleset/nsfw.txt
         interval: 86400
+    openai:
+        type: http
+        format: text
+        behavior: domain
+        url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/openai.yaml
+        path: ./ruleset/openai
+        interval: 86400
 
 # Replace the old rules with the new ones using rule-providers
 rules:
+    - RULE-SET,openai,🚀 节点选择
     - RULE-SET,private,DIRECT
     - RULE-SET,cn,DIRECT
     - RULE-SET,private-cidr,DIRECT,no-resolve
