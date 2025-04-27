@@ -214,6 +214,15 @@ proxy-groups:
   - vmess-tls-argo-s2-panwd
   - vmess-argo-s2-panwd
 
+- name: openai
+  type: select
+  proxies:
+  - serv00
+  - vless-reality-vision-s2-panwd
+  - vmess-ws-s2-panwd
+  - vmess-tls-argo-s2-panwd
+  - vmess-argo-s2-panwd
+  
 # Add rule-providers section from the second input
 rule-providers:
     private:
@@ -289,7 +298,7 @@ rule-providers:
 
 # Replace the old rules with the new ones using rule-providers
 rules:
-    - RULE-SET,openai,🚀 节点选择
+    - RULE-SET,openai,openai
     - RULE-SET,private,DIRECT
     - RULE-SET,cn,DIRECT
     - RULE-SET,private-cidr,DIRECT,no-resolve
