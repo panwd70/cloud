@@ -298,6 +298,7 @@ rule-providers:
 
 # Replace the old rules with the new ones using rule-providers
 rules:
+    - DOMAIN-SUFFIX,chatgpt.com,openai
     - RULE-SET,openai,openai
     - RULE-SET,private,DIRECT
     - RULE-SET,cn,DIRECT
