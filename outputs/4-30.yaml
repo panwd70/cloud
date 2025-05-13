@@ -238,11 +238,11 @@ proxies:
     udp: true
     tls: true
     network: ws
-    servername: sorts-marijuana-reservations-uh.trycloudflare.com # Using servername here
+    servername: must-lips-inns-twiki.trycloudflare.com
     ws-opts:
       path: "/302e0ea9-fa91-4236-a4f4-5a72b8e35999-vm"
       headers:
-        Host: sorts-marijuana-reservations-uh.trycloudflare.com
+        Host: must-lips-inns-twiki.trycloudflare.com
   - name: vmess-argo-s2-panwd
     type: vmess
     server: www.visa.com.hk
@@ -253,11 +253,11 @@ proxies:
     udp: true
     tls: false
     network: ws
-    servername: sorts-marijuana-reservations-uh.trycloudflare.com # Using servername here
+    servername: must-lips-inns-twiki.trycloudflare.com
     ws-opts:
       path: "/302e0ea9-fa91-4236-a4f4-5a72b8e35999-vm"
       headers:
-        Host: sorts-marijuana-reservations-uh.trycloudflare.com
+        Host: must-lips-inns-twiki.trycloudflare.com
 
 # Proxy Group Definitions
 proxy-groups:
