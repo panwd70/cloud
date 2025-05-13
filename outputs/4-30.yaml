@@ -307,6 +307,7 @@ proxy-groups:
       - vmess-ws-s2-panwd
       - vmess-tls-argo-s2-panwd
       - vmess-argo-s2-panwd
+      - 🚀 节点选择
 
 # Rule Provider Definitions
 rule-providers:
