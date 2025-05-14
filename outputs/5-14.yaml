@@ -435,8 +435,8 @@
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xai.yaml",
       "path": "./ruleset/xai.list",
       "interval": 86400
-    },
-  }
+    }
+  },
   "rules": [
     "RULE-SET,openai,openai",
     "RULE-SET,gemini,🚀 节点选择",  
