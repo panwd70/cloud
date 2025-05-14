@@ -419,7 +419,7 @@
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.yaml",
       "path": "./ruleset/openai.list",
       "interval": 86400
-    }
+    },
     "gemini": {
       "type": "http",
       "format": "text",
@@ -427,7 +427,7 @@
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-gemini.yaml",
       "path": "./ruleset/google-gemini.list",
       "interval": 86400
-    }
+    },
     "xai": {
       "type": "http",
       "format": "text",
@@ -435,8 +435,8 @@
       "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xai.yaml",
       "path": "./ruleset/xai.list",
       "interval": 86400
-    }
-  },
+    },
+  }
   "rules": [
     "RULE-SET,openai,openai",
     "RULE-SET,gemini,🚀 节点选择",  
