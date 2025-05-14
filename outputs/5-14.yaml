@@ -422,7 +422,6 @@
     }
   },
   "rules": [
-    "DOMAIN-SUFFIX,chatgpt.com,openai",
     "RULE-SET,openai,openai",
     "RULE-SET,private,DIRECT",
     "RULE-SET,private-cidr,DIRECT,no-resolve",
