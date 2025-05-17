@@ -438,6 +438,7 @@
     }
   },
   "rules": [
+    "DOMAIN-SUFFIX,chatgpt.com,openai",
     "RULE-SET,openai,openai",
     "RULE-SET,gemini,🚀 节点选择",  
     "RULE-SET,xai,🚀 节点选择", 
