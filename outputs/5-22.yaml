@@ -414,7 +414,7 @@
     },
     "owner": {
       "type": "http",
-      "format": "text",
+      "format": "yaml",
       "behavior": "domain",
       "url": "https://raw.githubusercontent.com/panwd70/cloud/refs/heads/main/outputs/owner.yaml",
       "path": "./ruleset/owner.list",
