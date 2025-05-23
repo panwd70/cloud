@@ -2,11 +2,12 @@ hysteria://62.210.10.113:22662/?protocol=udp&insecure=1&peer=apple.com&auth=dong
 tuic://f84c91a4-0125-4495-82f3-732cd0a0bba8:dongtaiwang.com@108.181.5.131:34008/?congestion_controller=bbr&udp_relay_mode=native&sni=bing.com&alpn=h3&allow_insecure=1&disable_sni=0#🇺🇸 US-tuic | 1-1
 hysteria://108.181.24.77:11512/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇺🇸 US-hysteria | 4-1
 hysteria://195.154.200.40:15010/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 0-0
-hysteria://51.159.226.1:14241/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 1-0
+hysteria://198.40.52.27:36194/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇺🇸 US-Hysteria | 1-0
+hysteria://51.159.226.1:14241/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 2-0
 hysteria2://dongtaiwang.com@51.159.111.32:31180/?sni=apple.com&insecure=1#🇫🇷 FR-Hysteria2 | 0-0
 hysteria2://dongtaiwang.com@hy2-1.694463.xyz:4489/?sni=www.bing.com&insecure=1#🇫🇷 FR-Hysteria2 | 1-0
 hysteria2://dongtaiwang.com@108.181.5.130:57773/?sni=apple.com&insecure=1#🇺🇸 US-Hysteria2 | 2-0
 hysteria2://dongtaiwang.com@46.17.41.5:12904/?sni=apple.com&insecure=1#🇷🇺 RU-Hysteria2 | 3-0
-vless://ef1fdecb-e56f-4996-9b6a-da7ddb7f7c8d@51.158.213.119:24957?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=Ok7Mg4VmHT4Typ9HydPSmHI55BgLONFk5ppLGiL8n1A&sid=4b4d9d72&type=tcp&serviceName=/&host=&path=#🇫🇷 FR-vless | 0-0
+vless://91b61883-5689-45a2-938e-7ed1dada457c@198.40.52.26:36311?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=qXgDpdoO4FshU51gC8ayY3bgud_nQArKVLLCMCtvc3w&sid=15847f28&type=tcp&serviceName=/&host=&path=#🇺🇸 US-vless | 0-0
 vless://288eab91-a2a9-4099-bcfd-ae057ec0d56e@108.181.3.68:19873?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=CORDH3FlQivimoVRhU_ZEUFzI-mT3Ko9CqTr7_CPtXw&sid=694212ed&type=tcp&serviceName=/&host=&path=#🇺🇸 US-vless | 1-0
 vless://f3ba3679-f2f4-465f-92a5-de320b775a88@185.22.155.105:42632?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=qtqcKrPLXaN-jpo7Zs1_80QDmA2uvCZKFGanJLJFFXA&sid=1f8b5201&type=tcp&serviceName=/&host=&path=#🇷🇺 RU-vless | 2-0
