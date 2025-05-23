@@ -416,7 +416,7 @@
       "type": "http",
       "format": "text",
       "behavior": "domain",
-      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.yaml",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/openai.yaml",
       "path": "./ruleset/openai.list",
       "interval": 86400
     },
