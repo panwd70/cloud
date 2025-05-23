@@ -424,7 +424,7 @@
       "type": "http",
       "format": "text",
       "behavior": "domain",
-      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google-gemini.yaml",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/google-gemini.yaml",
       "path": "./ruleset/google-gemini.list",
       "interval": 86400
     },
@@ -432,7 +432,7 @@
       "type": "http",
       "format": "text",
       "behavior": "domain",
-      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/xai.yaml",
+      "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/xai.yaml",
       "path": "./ruleset/xai.list",
       "interval": 86400
     }
