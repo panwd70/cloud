@@ -196,6 +196,21 @@ proxies:
   reality-opts:
     public-key: qtqcKrPLXaN-jpo7Zs1_80QDmA2uvCZKFGanJLJFFXA
     short-id: 1f8b5201
+- name: 🇺🇸 US-vless | 3-0
+  type: vless
+  server: 108.181.3.68
+  port: 51499
+  uuid: c643de0a-9678-4c18-9f55-58620425bac0
+  flow: xtls-rprx-vision
+  tls: true
+  servername: aws.amazon.com
+  network: tcp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: S4-VtlwDUlz7CbSlpf8mqD4ejRWFOISwCXqdtm3JCww
+    short-id: ''
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -218,6 +233,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -239,6 +255,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -260,6 +277,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -281,6 +299,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -302,6 +321,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -323,6 +343,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -344,6 +365,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -365,6 +387,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -386,6 +409,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -407,6 +431,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -428,6 +453,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -449,6 +475,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -470,6 +497,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -491,6 +519,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -521,6 +550,7 @@ proxy-groups:
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇷🇺 RU-vless | 2-0
+  - 🇺🇸 US-vless | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
