@@ -154,49 +154,19 @@ proxies:
 - name: 🇺🇸 US-vless | 0-0
   type: vless
   server: 198.40.52.26
-  port: 36311
-  uuid: 91b61883-5689-45a2-938e-7ed1dada457c
+  port: 20783
+  uuid: 942e9337-6cd1-471e-ae3e-6a4ae0f38465
   flow: xtls-rprx-vision
   tls: true
-  servername: www.yahoo.com
+  servername: aws.amazon.com
   network: tcp
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: /
   reality-opts:
-    public-key: qXgDpdoO4FshU51gC8ayY3bgud_nQArKVLLCMCtvc3w
-    short-id: 15847f28
+    public-key: hoDqIoXDTQap0fGHAsSkCPmGq3CpUjjnholUcahMb3Y
+    short-id: ''
 - name: 🇺🇸 US-vless | 1-0
-  type: vless
-  server: 108.181.3.68
-  port: 19873
-  uuid: 288eab91-a2a9-4099-bcfd-ae057ec0d56e
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.yahoo.com
-  network: tcp
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /
-  reality-opts:
-    public-key: CORDH3FlQivimoVRhU_ZEUFzI-mT3Ko9CqTr7_CPtXw
-    short-id: 694212ed
-- name: 🇷🇺 RU-vless | 2-0
-  type: vless
-  server: 185.22.155.105
-  port: 42632
-  uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.yahoo.com
-  network: tcp
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /
-  reality-opts:
-    public-key: qtqcKrPLXaN-jpo7Zs1_80QDmA2uvCZKFGanJLJFFXA
-    short-id: 1f8b5201
-- name: 🇺🇸 US-vless | 3-0
   type: vless
   server: 108.181.3.68
   port: 51499
@@ -232,8 +202,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -254,8 +222,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -276,8 +242,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -298,8 +262,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -320,8 +282,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -342,8 +302,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -364,8 +322,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -386,8 +342,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -408,8 +362,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -430,8 +382,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -452,8 +402,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -474,8 +422,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -496,8 +442,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -518,8 +462,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -549,8 +491,6 @@ proxy-groups:
   - 🇷🇺 RU-Hysteria2 | 3-0
   - 🇺🇸 US-vless | 0-0
   - 🇺🇸 US-vless | 1-0
-  - 🇷🇺 RU-vless | 2-0
-  - 🇺🇸 US-vless | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
