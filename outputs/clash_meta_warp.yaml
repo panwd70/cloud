@@ -69,7 +69,21 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: 🇺🇸 US-hysteria | 4-1
+- name: 🇺🇸 US-anytls | 4-1
+  type: anytls
+  server: 208.87.243.187
+  port: 61289
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: 🇺🇸 US-hysteria | 5-1
   type: hysteria
   server: 108.181.24.77
   port: 11512
@@ -192,7 +206,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -212,7 +227,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -232,7 +248,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -252,7 +269,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -272,7 +290,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -292,7 +311,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -312,7 +332,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -332,7 +353,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -352,7 +374,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -372,7 +395,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -392,7 +416,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -412,7 +437,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -432,7 +458,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -452,7 +479,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -481,7 +509,8 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-hysteria | 4-1
+  - 🇺🇸 US-anytls | 4-1
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
