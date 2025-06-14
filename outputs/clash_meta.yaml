@@ -146,11 +146,11 @@ proxies:
   password: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
-- name: 🇺🇸 US-vless | 0-0
+- name: 🇨🇳 TW-vless | 0-0
   type: vless
-  server: 198.40.52.26
-  port: 20783
-  uuid: 942e9337-6cd1-471e-ae3e-6a4ae0f38465
+  server: tw-2.534582.xyz
+  port: 39747
+  uuid: cf111519-9992-4e2e-8675-8e8edc178578
   flow: xtls-rprx-vision
   tls: true
   servername: aws.amazon.com
@@ -159,7 +159,7 @@ proxies:
   grpc-opts:
     grpc-service-name: /
   reality-opts:
-    public-key: hoDqIoXDTQap0fGHAsSkCPmGq3CpUjjnholUcahMb3Y
+    public-key: nHo49RB7F74I1uH_YitKGY5GxejTq0XcY8BbEKe99xE
     short-id: ''
 - name: 🇺🇸 US-vless | 1-0
   type: vless
@@ -175,6 +175,21 @@ proxies:
     grpc-service-name: /
   reality-opts:
     public-key: S4-VtlwDUlz7CbSlpf8mqD4ejRWFOISwCXqdtm3JCww
+    short-id: ''
+- name: 🇺🇸 US-vless | 2-0
+  type: vless
+  server: 198.40.52.26
+  port: 20783
+  uuid: 942e9337-6cd1-471e-ae3e-6a4ae0f38465
+  flow: xtls-rprx-vision
+  tls: true
+  servername: aws.amazon.com
+  network: tcp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: hoDqIoXDTQap0fGHAsSkCPmGq3CpUjjnholUcahMb3Y
     short-id: ''
 proxy-groups:
 - name: 🚀 节点选择
@@ -195,8 +210,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -216,8 +232,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -236,8 +253,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -256,8 +274,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -276,8 +295,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -296,8 +316,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -316,8 +337,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -336,8 +358,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -356,8 +379,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -376,8 +400,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -396,8 +421,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -425,8 +451,9 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
+  - 🇺🇸 US-vless | 2-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
