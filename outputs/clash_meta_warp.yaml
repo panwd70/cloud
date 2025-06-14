@@ -111,15 +111,15 @@ proxies:
   - h3
 - name: 🇺🇸 US-Hysteria | 1-0
   type: hysteria
-  server: 198.40.52.27
-  port: 36194
-  ports: 36194
+  server: 208.87.243.151
+  port: 17549
+  ports: 17549
   auth-str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
   alpn:
   - h3
