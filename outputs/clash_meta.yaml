@@ -50,10 +50,10 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: 🇺🇸 US-anytls | 4-1
+- name: 🇨🇳 TW-anytls | 4-1
   type: anytls
-  server: 208.87.243.187
-  port: 61289
+  server: tw.534582.xyz
+  port: 8443
   password: dongtaiwang.com
   client-fingerprint: chrome
   udp: true
@@ -146,20 +146,20 @@ proxies:
   password: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
-- name: 🇷🇺 RU-vless | 0-0
+- name: 🇨🇳 TW-vless | 0-0
   type: vless
-  server: 185.22.155.105
-  port: 62750
-  uuid: fdd2d176-2602-46f2-b694-ce247de88b22
+  server: tw-2.534582.xyz
+  port: 49226
+  uuid: 9244d7a3-6c74-4035-b64f-a90f3ee6e173
   flow: xtls-rprx-vision
   tls: true
-  servername: www.paypal.com
+  servername: dash.cloudflare.com
   network: tcp
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: /
   reality-opts:
-    public-key: _E_YXE_gOkDrffe4t6gcajtnjFZAJ3g7ZwTJbL3IOHA
+    public-key: vyqO2y1XKUzVQNuOAtBpYPaZJWxuvfA9CTVuoF9RClQ
     short-id: ''
 - name: 🇺🇸 US-vless | 1-0
   type: vless
@@ -201,7 +201,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -210,7 +210,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: ♻️ 自动选择
@@ -223,7 +223,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -232,7 +232,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: 📺 哔哩哔哩
@@ -244,7 +244,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -253,7 +253,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: 🌏 国内媒体
@@ -265,7 +265,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -274,7 +274,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: 🌍 国外媒体
@@ -286,7 +286,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -295,7 +295,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: 📲 电报信息
@@ -307,7 +307,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -316,7 +316,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: Ⓜ️ 微软云盘
@@ -328,7 +328,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -337,7 +337,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: Ⓜ️ 微软服务
@@ -349,7 +349,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -358,7 +358,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: 🍎 苹果服务
@@ -370,7 +370,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -379,7 +379,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: 📢 谷歌FCM
@@ -391,7 +391,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -400,7 +400,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: 🤖 OpenAI
@@ -412,7 +412,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -421,7 +421,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 - name: 🎯 全球直连
@@ -442,7 +442,7 @@ proxy-groups:
   - 🇺🇸 US-tuic | 1-1
   - 🇺🇸 US-mieru | 2-1
   - 🇷🇺 RU-mieru | 3-1
-  - 🇺🇸 US-anytls | 4-1
+  - 🇨🇳 TW-anytls | 4-1
   - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
@@ -451,7 +451,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
   - 🇷🇺 RU-Hysteria2 | 3-0
-  - 🇷🇺 RU-vless | 0-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇺🇸 US-vless | 1-0
   - 🇺🇸 US-vless | 2-0
 rules:
