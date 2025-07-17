@@ -52,7 +52,7 @@ proxies:
   password: dongtaiwang.com
 - name: 🇨🇳 TW-anytls | 4-1
   type: anytls
-  server: tw.534582.xyz
+  server: tx-1.756794.xyz
   port: 8443
   password: dongtaiwang.com
   client-fingerprint: chrome
@@ -134,7 +134,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇳 TW-vless | 0-0
   type: vless
-  server: tw-2.534582.xyz
+  server: tx-2.756794.xyz
   port: 49226
   uuid: 9244d7a3-6c74-4035-b64f-a90f3ee6e173
   flow: xtls-rprx-vision
