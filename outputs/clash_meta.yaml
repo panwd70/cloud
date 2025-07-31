@@ -132,7 +132,22 @@ proxies:
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇺🇸 US-vless | 0-0
+- name: 🇱🇺 LU-vless | 0-0
+  type: vless
+  server: 109.104.154.108
+  port: 34288
+  uuid: 69af8d2d-435e-4d4f-a0e7-4556dc7e9ed5
+  flow: ''
+  tls: true
+  servername: www.yahoo.com
+  network: xhttp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: 61o28fH6Wm4QFW29xn7DI8s2kCx3wpQPsactbIC2Xzg
+    short-id: 15c47aba
+- name: 🇺🇸 US-vless | 1-0
   type: vless
   server: 108.181.3.70
   port: 443
@@ -164,7 +179,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -182,7 +198,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -199,7 +216,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -216,7 +234,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -233,7 +252,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -250,7 +270,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -267,7 +288,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -284,7 +306,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -301,7 +324,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -318,7 +342,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -335,7 +360,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -361,7 +387,8 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria2 | 0-0
   - 🇫🇷 FR-Hysteria2 | 1-0
   - 🇺🇸 US-Hysteria2 | 2-0
-  - 🇺🇸 US-vless | 0-0
+  - 🇱🇺 LU-vless | 0-0
+  - 🇺🇸 US-vless | 1-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
