@@ -216,7 +216,7 @@ proxies:
     short-id: 15c47aba
 - name: 🇨🇳 TW-vless | 1-0
   type: vless
-  server: fan.683024.xyz
+  server: fan1.193919.xyz
   port: 42348
   uuid: 68ea0080-62e5-4b84-95a9-8d6bec2fe3fe
   flow: ''
