@@ -14,7 +14,7 @@ proxies:
 - name: 🇳🇱 NL-hysteria | 0-1
   type: hysteria
   server: 62.210.10.113
-  port: 13767
+  port: 14801
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -26,7 +26,7 @@ proxies:
 - name: 🏳 Unknown-hysteria | 0-2
   type: hysteria
   server: 2001:bc8:32d7:306::123
-  port: 13767
+  port: 14801
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
