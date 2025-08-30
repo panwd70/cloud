@@ -32,8 +32,8 @@ proxies:
   dialer-proxy: ☁ WARP前置节点
 - name: 🇫🇷 FR-hysteria | 0-1
   type: hysteria
-  server: 51.159.111.32
-  port: 15670
+  server: 51.159.107.20
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -44,8 +44,8 @@ proxies:
   down: 55 Mbps
 - name: 🏳 Unknown-hysteria | 0-2
   type: hysteria
-  server: 2001:bc8:1203:106::111
-  port: 15670
+  server: 2001:bc8:1203:25::1
+  port: 18899
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
