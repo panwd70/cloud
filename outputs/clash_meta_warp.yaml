@@ -33,7 +33,7 @@ proxies:
 - name: 🇫🇷 FR-hysteria | 0-1
   type: hysteria
   server: 51.159.107.20
-  port: 18899
+  port: 20001
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -45,7 +45,7 @@ proxies:
 - name: 🏳 Unknown-hysteria | 0-2
   type: hysteria
   server: 2001:bc8:1203:25::1
-  port: 18899
+  port: 20001
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
