@@ -4,3 +4,5 @@ https://www.gitlabip.xyz/Alvin9999/PAC/master/backup/img/1/2/ipp/clash.meta2/3/c
 https://www.gitlabip.xyz/Alvin9999/PAC/master/backup/img/1/2/ipp/clash.meta2/4/config.yaml
 https://www.gitlabip.xyz/Alvin9999/PAC/master/backup/img/1/2/ipp/clash.meta2/5/config.yaml
 https://www.gitlabip.xyz/Alvin9999/PAC/master/backup/img/1/2/ipp/clash.meta2/6/config.yaml
+https://www.gitlabip.xyz/Alvin9999/PAC/master/backup/img/1/2/ipp/quick/1/config.yaml
+https://www.gitlabip.xyz/Alvin9999/PAC/master/backup/img/1/2/ipp/quick/2/config.yaml
