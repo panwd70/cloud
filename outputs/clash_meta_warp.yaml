@@ -136,6 +136,44 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇳🇱 NL-tuic | 6-1
+  server: 62.210.10.113
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🏳 Unknown-tuic | 6-2
+  server: 2001:bc8:32d7:306::123
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🇳🇱 NL-hysteria | 7-1
+  type: hysteria
+  server: 62.210.10.113
+  port: 13767
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇫🇷 FR-Hysteria | 0-0
   type: hysteria
   server: 195.154.200.40
@@ -275,6 +313,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -300,6 +341,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -325,6 +369,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -350,6 +397,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -375,6 +425,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -400,6 +453,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -425,6 +481,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -450,6 +509,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -475,6 +537,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -500,6 +565,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -525,6 +593,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -550,6 +621,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -575,6 +649,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -600,6 +677,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
@@ -634,6 +714,9 @@ proxy-groups:
   - 🏳 Unknown-tuic | 4-2
   - 🏳 Unknown-hysteria | 5-1
   - 🏳 Unknown-hysteria | 5-2
+  - 🇳🇱 NL-tuic | 6-1
+  - 🏳 Unknown-tuic | 6-2
+  - 🇳🇱 NL-hysteria | 7-1
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇺🇸 US-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
