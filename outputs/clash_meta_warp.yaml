@@ -80,18 +80,22 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 🇺🇸 US-hysteria | 3-1
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: 🏳 Unknown-vless | 3-1
+  type: vless
+  server: 2001:bc8:32d7:158::5
+  port: 10033
+  uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
+  network: grpc
+  udp: true
+  tls: true
+  flow: null
+  servername: nijigen-works.jp
+  reality-opts:
+    public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
+    short-id: dfdfb0e2e2d400c4
+  grpc-opts:
+    grpc-service-name: FhwHiFzK
+  client-fingerprint: chrome
 - name: 🇫🇷 FR-vless | 0-0
   type: vless
   server: 195.154.200.40
@@ -122,21 +126,21 @@ proxies:
   reality-opts:
     public-key: k4XAXur_dLeMaXuxxJcBM_0zEI5KDj9BWazoZ0yi53I
     short-id: fac09bb3
-- name: 🇺🇸 US-vless | 2-0
+- name: 🏳 Unknown-vless | 2-0
   type: vless
-  server: 108.181.3.66
-  port: 55392
-  uuid: 68191152-0cf8-4b4c-bdb9-08c75df6455d
+  server: 2001:bc8:32d7:158::6
+  port: 10033
+  uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
   flow: ''
   tls: true
-  servername: www.yahoo.com
-  network: xhttp
+  servername: nijigen-works.jp
+  network: grpc
   client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: /
+    grpc-service-name: FhwHiFzK
   reality-opts:
-    public-key: sKMivX1dvd_x0khhZW6D6ex3KH9Cso__DyZUIqBcyQI
-    short-id: 8e9024a0
+    public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
+    short-id: dfdfb0e2e2d400c4
 - name: 🏳 Unknown-vless | 3-0
   type: vless
   server: 2001:bc8:32d7:302::15
@@ -163,10 +167,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: ♻️ 自动选择
   type: url-test
@@ -178,10 +182,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: ⚖ 负载均衡
   type: load-balance
@@ -193,10 +197,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: ☁ WARP前置节点
   type: select
@@ -208,10 +212,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📺 巴哈姆特
   type: select
@@ -223,10 +227,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📺 哔哩哔哩
   type: select
@@ -238,10 +242,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🌏 国内媒体
   type: select
@@ -253,10 +257,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🌍 国外媒体
   type: select
@@ -268,10 +272,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📲 电报信息
   type: select
@@ -283,10 +287,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -298,10 +302,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -313,10 +317,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🍎 苹果服务
   type: select
@@ -328,10 +332,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📢 谷歌FCM
   type: select
@@ -343,10 +347,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🤖 OpenAI
   type: select
@@ -358,10 +362,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🎯 全球直连
   type: select
@@ -382,10 +386,10 @@ proxy-groups:
   - 🏳 Unknown-hysteria | 0-2
   - 🇫🇷 FR-tuic | 1-1
   - 🏳 Unknown-tuic | 2-1
-  - 🇺🇸 US-hysteria | 3-1
+  - 🏳 Unknown-vless | 3-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
-  - 🇺🇸 US-vless | 2-0
+  - 🏳 Unknown-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
