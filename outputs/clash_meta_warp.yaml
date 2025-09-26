@@ -95,6 +95,44 @@ proxies:
   grpc-opts:
     grpc-service-name: FhwHiFzK
   client-fingerprint: chrome
+- name: 🇳🇱 NL-tuic | 4-1
+  server: 62.210.10.113
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🏳 Unknown-tuic | 4-2
+  server: 2001:bc8:32d7:306::123
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🇺🇸 US-hysteria | 5-1
+  type: hysteria
+  server: 208.87.243.151
+  port: 10023
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇫🇷 FR-vless | 0-0
   type: vless
   server: 195.154.200.40
@@ -167,6 +205,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -182,6 +223,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -197,6 +241,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -212,6 +259,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -227,6 +277,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -242,6 +295,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -257,6 +313,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -272,6 +331,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -287,6 +349,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -302,6 +367,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -317,6 +385,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -332,6 +403,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -347,6 +421,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -362,6 +439,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
@@ -386,6 +466,9 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 1-1
   - 🇫🇷 FR-hysteria | 2-1
   - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
