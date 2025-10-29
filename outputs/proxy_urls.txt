@@ -1,5 +1,1 @@
-hysteria://51.159.107.20:20001/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇫🇷 FR-hysteria | 0-1
-hysteria://62.210.11.74:30011/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇫🇷 FR-hysteria | 0-2
-hysteria://62.210.10.140:42248/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇫🇷 FR-hysteria | 2-1
 hysteria://208.87.243.151:10023/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇺🇸 US-hysteria | 5-1
-vless://8b66e552-e89d-4c4f-bb5a-e3d37bf151b8@fan3.394615.xyz:34500?encryption=none&flow=&security=reality&sni=www.lovelive-anime.jp&fp=chrome&pbk=Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ&sid=3a1381d1b2cc9e19&type=xhttp&serviceName=/&host=&path=#🇨🇳 TW-vless | 1-0
