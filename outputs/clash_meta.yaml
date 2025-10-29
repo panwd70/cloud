@@ -11,6 +11,42 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
+- name: 🇫🇷 FR-hysteria | 0-1
+  type: hysteria
+  server: 51.159.107.20
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 FR-hysteria | 0-2
+  type: hysteria
+  server: 62.210.11.74
+  port: 30011
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 FR-hysteria | 2-1
+  type: hysteria
+  server: 62.210.10.140
+  port: 42248
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇺🇸 US-hysteria | 5-1
   type: hysteria
   server: 208.87.243.151
@@ -23,74 +59,159 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇫🇷 FR-vless | 0-0
+  type: vless
+  server: 195.154.200.40
+  port: 39433
+  uuid: 3ed2ad90-b217-4872-8aa4-ef69a9b90f1e
+  flow: ''
+  tls: true
+  servername: www.yahoo.com
+  network: xhttp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: 1lqZT_67ca5aaviZfHpK55-JdpNG10k2yxkGQwhF9Hg
+    short-id: cbdf01cc
+- name: 🇨🇳 TW-vless | 1-0
+  type: vless
+  server: fan3.394615.xyz
+  port: 34500
+  uuid: 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8
+  flow: ''
+  tls: true
+  servername: www.lovelive-anime.jp
+  network: xhttp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ
+    short-id: 3a1381d1b2cc9e19
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -105,7 +226,12 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-hysteria | 2-1
   - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
