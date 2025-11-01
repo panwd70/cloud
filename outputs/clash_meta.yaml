@@ -11,109 +11,140 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- name: 🇫🇷 FR-hysteria | 0-1
-  type: hysteria
-  server: 51.159.107.20
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: 🇫🇷 FR-tuic | 1-1
+  server: 62.210.10.140
+  port: 23556
+  type: tuic
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇫🇷 FR-hysteria | 0-2
-  type: hysteria
-  server: 62.210.11.74
-  port: 30011
-  auth-str: dongtaiwang.com
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🏳 Unknown-vless | 3-1
+  type: vless
+  server: 2001:bc8:32d7:158::5
+  port: 10033
+  uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
+  network: grpc
+  udp: true
+  tls: true
+  flow: null
+  servername: nijigen-works.jp
+  reality-opts:
+    public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
+    short-id: dfdfb0e2e2d400c4
+  grpc-opts:
+    grpc-service-name: FhwHiFzK
+  client-fingerprint: chrome
+- name: 🏳 Unknown-vless | 2-0
+  type: vless
+  server: 2001:bc8:32d7:158::6
+  port: 10033
+  uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
+  flow: ''
+  tls: true
+  servername: nijigen-works.jp
+  network: grpc
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: FhwHiFzK
+  reality-opts:
+    public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
+    short-id: dfdfb0e2e2d400c4
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -128,8 +159,9 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-hysteria | 0-1
-  - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🏳 Unknown-vless | 3-1
+  - 🏳 Unknown-vless | 2-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
