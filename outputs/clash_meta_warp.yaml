@@ -30,10 +30,10 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇫🇷 FR-hysteria | 2-1
+- name: 🇫🇷 FR-hysteria | 0-1
   type: hysteria
-  server: 62.210.10.140
-  port: 42248
+  server: 51.159.107.20
+  port: 20001
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -42,6 +42,45 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇫🇷 FR-hysteria | 0-2
+  type: hysteria
+  server: 62.210.11.74
+  port: 30011
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇺🇸 US-hysteria | 5-1
+  type: hysteria
+  server: 208.87.243.151
+  port: 10023
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 FR-vless | 0-0
+  type: vless
+  server: 195.154.200.40
+  port: 39433
+  uuid: 3ed2ad90-b217-4872-8aa4-ef69a9b90f1e
+  flow: ''
+  tls: true
+  servername: www.yahoo.com
+  network: xhttp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: 1lqZT_67ca5aaviZfHpK55-JdpNG10k2yxkGQwhF9Hg
+    short-id: cbdf01cc
 - name: 🏳 Unknown-vless | 2-0
   type: vless
   server: 2001:bc8:32d7:158::6
@@ -64,7 +103,10 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: ♻️ 自动选择
   type: url-test
@@ -72,7 +114,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: ⚖ 负载均衡
   type: load-balance
@@ -80,7 +125,10 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: ☁ WARP前置节点
   type: select
@@ -88,7 +136,10 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: 📺 巴哈姆特
   type: select
@@ -96,7 +147,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: 📺 哔哩哔哩
   type: select
@@ -104,7 +158,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: 🌏 国内媒体
   type: select
@@ -112,7 +169,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: 🌍 国外媒体
   type: select
@@ -120,7 +180,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: 📲 电报信息
   type: select
@@ -128,7 +191,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -136,7 +202,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -144,7 +213,10 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: 🍎 苹果服务
   type: select
@@ -152,7 +224,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: 📢 谷歌FCM
   type: select
@@ -160,7 +235,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: 🤖 OpenAI
   type: select
@@ -168,7 +246,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 - name: 🎯 全球直连
   type: select
@@ -185,7 +266,10 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-hysteria | 0-2
+  - 🇺🇸 US-hysteria | 5-1
+  - 🇫🇷 FR-vless | 0-0
   - 🏳 Unknown-vless | 2-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
