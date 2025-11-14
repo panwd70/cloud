@@ -35,6 +35,69 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇫🇷 FR-tuic | 1-1
+  server: 62.210.10.140
+  port: 23556
+  type: tuic
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🇫🇷 FR-hysteria | 2-1
+  type: hysteria
+  server: 62.210.10.140
+  port: 42248
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇳🇱 NL-tuic | 4-1
+  server: 62.210.10.113
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🏳 Unknown-tuic | 4-2
+  server: 2001:bc8:32d7:306::123
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🇺🇸 US-hysteria | 5-1
+  type: hysteria
+  server: 208.87.243.151
+  port: 10023
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇫🇷 FR-vless | 0-0
   type: vless
   server: 195.154.200.40
@@ -50,7 +113,22 @@ proxies:
   reality-opts:
     public-key: 1lqZT_67ca5aaviZfHpK55-JdpNG10k2yxkGQwhF9Hg
     short-id: cbdf01cc
-- name: 🏳 Unknown-vless | 3-0
+- name: 🇨🇳 TW-vless | 1-0
+  type: vless
+  server: fan3.394615.xyz
+  port: 34500
+  uuid: 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8
+  flow: ''
+  tls: true
+  servername: www.lovelive-anime.jp
+  network: xhttp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ
+    short-id: 3a1381d1b2cc9e19
+- name: 🏳 Unknown-vless | 2-0
   type: vless
   server: 2001:bc8:32d7:158::6
   port: 10033
@@ -73,8 +151,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -83,8 +167,14 @@ proxy-groups:
   proxies:
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -92,8 +182,14 @@ proxy-groups:
   - 🚀 节点选择
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -101,8 +197,14 @@ proxy-groups:
   - 🚀 节点选择
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -110,8 +212,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -119,8 +227,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -128,8 +242,14 @@ proxy-groups:
   - 🚀 节点选择
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -137,8 +257,14 @@ proxy-groups:
   - 🚀 节点选择
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -146,8 +272,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -155,8 +287,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -164,8 +302,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -182,8 +326,14 @@ proxy-groups:
   - 🎯 全球直连
   - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-hysteria | 0-2
+  - 🇫🇷 FR-tuic | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🏳 Unknown-tuic | 4-2
+  - 🇺🇸 US-hysteria | 5-1
   - 🇫🇷 FR-vless | 0-0
-  - 🏳 Unknown-vless | 3-0
+  - 🇨🇳 TW-vless | 1-0
+  - 🏳 Unknown-vless | 2-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
