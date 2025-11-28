@@ -11,89 +11,111 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- name: 🇫🇷 FR-vless | 0-0
-  type: vless
-  server: 195.154.200.40
-  port: 39433
-  uuid: 3ed2ad90-b217-4872-8aa4-ef69a9b90f1e
-  flow: ''
-  tls: true
-  servername: www.yahoo.com
-  network: xhttp
+- name: 🇫🇷 FR-anytls | 1-1
+  type: anytls
+  server: 62.210.10.140
+  port: 8443
+  password: dongtaiwang.com
   client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /
-  reality-opts:
-    public-key: 1lqZT_67ca5aaviZfHpK55-JdpNG10k2yxkGQwhF9Hg
-    short-id: cbdf01cc
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: 🇫🇷 FR-hysteria | 2-1
+  type: hysteria
+  server: 62.210.10.140
+  port: 42248
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -108,7 +130,8 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇫🇷 FR-vless | 0-0
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
