@@ -30,6 +30,102 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
+- name: 🇫🇷 FR-tuic | 0-1
+  server: ipv4.758733.xyz
+  port: 50088
+  type: tuic
+  uuid: 93959440-4f83-4352-b939-906b1fd3fa59
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🇫🇷 FR-anytls | 0-2
+  type: anytls
+  server: 62.210.11.74
+  port: 8443
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: 🇫🇷 FR-anytls | 1-1
+  type: anytls
+  server: 62.210.10.140
+  port: 8443
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: 🇫🇷 FR-hysteria | 2-1
+  type: hysteria
+  server: 62.210.10.140
+  port: 42248
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🏳 Unknown-vless | 3-1
+  type: vless
+  server: 2001:bc8:32d7:158::5
+  port: 10033
+  uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
+  network: grpc
+  udp: true
+  tls: true
+  flow: null
+  servername: nijigen-works.jp
+  reality-opts:
+    public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
+    short-id: dfdfb0e2e2d400c4
+  grpc-opts:
+    grpc-service-name: FhwHiFzK
+  client-fingerprint: chrome
+- name: 🇳🇱 NL-tuic | 4-1
+  server: 62.210.10.113
+  port: 33998
+  type: tuic
+  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: 🇨🇳 TW-anytls | 4-2
+  type: anytls
+  server: fan3.394615.xyz
+  port: 8443
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -37,84 +133,182 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
-  proxies: []
+  proxies:
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: consistent-hashing
-  proxies: []
+  proxies:
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: ☁ WARP前置节点
   type: select
   proxies:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: 📺 巴哈姆特
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -130,6 +324,13 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇫🇷 FR-tuic | 0-1
+  - 🇫🇷 FR-anytls | 0-2
+  - 🇫🇷 FR-anytls | 1-1
+  - 🇫🇷 FR-hysteria | 2-1
+  - 🏳 Unknown-vless | 3-1
+  - 🇳🇱 NL-tuic | 4-1
+  - 🇨🇳 TW-anytls | 4-2
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
