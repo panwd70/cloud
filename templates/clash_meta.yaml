@@ -743,7 +743,6 @@ rules:
     - DOMAIN-KEYWORD,openai,🤖 OpenAI
     - DOMAIN-SUFFIX,ai.com,🤖 OpenAI
     - DOMAIN-SUFFIX,auth0.com,🤖 OpenAI
-    - DOMAIN-SUFFIX,challenges.cloudflare.com,🤖 OpenAI
     - DOMAIN-SUFFIX,client-api.arkoselabs.com,🤖 OpenAI
     - DOMAIN-SUFFIX,events.statsigapi.net,🤖 OpenAI
     - DOMAIN-SUFFIX,featuregates.org,🤖 OpenAI
@@ -2165,7 +2164,6 @@ rules:
     - DOMAIN-SUFFIX,clipfish.de,🚀 节点选择
     - DOMAIN-SUFFIX,cloakpoint.com,🚀 节点选择
     - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
-    - DOMAIN-SUFFIX,cloudflare-ipfs.com,🚀 节点选择
     - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
     - DOMAIN-SUFFIX,club1069.com,🚀 节点选择
     - DOMAIN-SUFFIX,clubhouseapi.com,🚀 节点选择
