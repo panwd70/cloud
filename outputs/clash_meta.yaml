@@ -265,15 +265,18 @@ proxy-groups:
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
+- DOMAIN-SUFFIX,grok.com,🤖 OpenAI
+- DOMAIN-SUFFIX,x.ai,🤖 OpenAI
+- DOMAIN-SUFFIX,meta.ai,🤖 OpenAI
 - DOMAIN-KEYWORD,tiktok,🚀 节点选择
 - DOMAIN-KEYWORD,chatgpt,🤖 OpenAI
-- DOMAIN-KEYWORD,ai.google.dev,📢 谷歌FCM
+- DOMAIN-KEYWORD,google,📢 谷歌FCM
 - DOMAIN-KEYWORD,aistudio.google.com,📢 谷歌FCM
 - DOMAIN-KEYWORD,coze,🚀 节点选择
-- DOMAIN-KEYWORD,google,📢 谷歌FCM
 - DOMAIN-KEYWORD,gemini,📢 谷歌FCM
 - DOMAIN-KEYWORD,bing,🚀 节点选择
-- DOMAIN-SUFFIX,x.com,🚀 节点选择
+- DOMAIN-SUFFIX,x.com,🤖 OpenAI
+- DOMAIN-SUFFIX,poe.com,🚀 节点选择
 - DOMAIN-SUFFIX,cloudns.org,🚀 节点选择
 - DOMAIN-SUFFIX,workers.dev,🚀 节点选择
 - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
@@ -3589,6 +3592,7 @@ rules:
 - DOMAIN-SUFFIX,grow.google,🚀 节点选择
 - DOMAIN-SUFFIX,gs-discuss.com,🚀 节点选择
 - DOMAIN-SUFFIX,gsearch.media,🚀 节点选择
+- DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
 - DOMAIN-SUFFIX,gtricks.com,🚀 节点选择
 - DOMAIN-SUFFIX,gts-vpn.com,🚀 节点选择
 - DOMAIN-SUFFIX,gtv.org,🚀 节点选择
@@ -7367,6 +7371,7 @@ rules:
 - DOMAIN-SUFFIX,googletagmanager.com,🚀 节点选择
 - DOMAIN-SUFFIX,googletagservices.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
+- DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
 - DOMAIN-SUFFIX,gtm.oasisfeng.com,🚀 节点选择
 - DOMAIN-SUFFIX,gv.com,🚀 节点选择
 - DOMAIN-SUFFIX,gvt0.com,🚀 节点选择
@@ -7409,6 +7414,7 @@ rules:
 - DOMAIN-KEYWORD,blogspot,🚀 节点选择
 - DOMAIN-KEYWORD,gmail,🚀 节点选择
 - DOMAIN-KEYWORD,google,🚀 节点选择
+- DOMAIN-KEYWORD,gstatic,🚀 节点选择
 - DOMAIN-KEYWORD,www.google,🚀 节点选择
 - IP-CIDR,74.125.0.0/16,🚀 节点选择,no-resolve
 - IP-CIDR,173.194.0.0/16,🚀 节点选择,no-resolve
