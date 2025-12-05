@@ -71,18 +71,54 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: 🇫🇷 FR-hysteria | 2-1
-  type: hysteria
-  server: 62.210.10.140
-  port: 42248
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+- name: 🇫🇷 FR-vless | 2-1
+  type: vless
+  server: 195.154.200.131
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
+- name: 🏳 Unknown-vless | 2-2
+  type: vless
+  server: 2001:bc8:32d7:181::2
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
 - name: 🏳 Unknown-vless | 3-1
   type: vless
   server: 2a14:7583:2977::a
@@ -134,21 +170,6 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: 🏳 Unknown-vless | 2-0
-  type: vless
-  server: 2001:bc8:32d7:158::6
-  port: 10033
-  uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
-  flow: ''
-  tls: true
-  servername: nijigen-works.jp
-  network: grpc
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: FhwHiFzK
-  reality-opts:
-    public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
-    short-id: dfdfb0e2e2d400c4
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -159,11 +180,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -173,11 +194,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -187,11 +208,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -201,11 +222,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -215,11 +236,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -229,11 +250,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -243,11 +264,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -257,11 +278,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -271,11 +292,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -285,11 +306,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -299,11 +320,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -313,11 +334,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -327,11 +348,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -341,11 +362,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -364,11 +385,11 @@ proxy-groups:
   - 🇫🇷 FR-tuic | 0-1
   - 🇫🇷 FR-anytls | 0-2
   - 🇹🇷 TR-anytls | 1-1
-  - 🇫🇷 FR-hysteria | 2-1
+  - 🇫🇷 FR-vless | 2-1
+  - 🏳 Unknown-vless | 2-2
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🏳 Unknown-vless | 2-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
