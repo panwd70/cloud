@@ -170,6 +170,21 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
+- name: 🇫🇷 FR-vless | 0-0
+  type: vless
+  server: 195.154.200.40
+  port: 39433
+  uuid: 3ed2ad90-b217-4872-8aa4-ef69a9b90f1e
+  flow: ''
+  tls: true
+  servername: www.yahoo.com
+  network: xhttp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: 1lqZT_67ca5aaviZfHpK55-JdpNG10k2yxkGQwhF9Hg
+    short-id: cbdf01cc
 - name: 🇨🇳 TW-vless | 1-0
   type: vless
   server: fan3.394615.xyz
@@ -215,6 +230,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: ♻️ 自动选择
@@ -231,6 +247,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: ⚖ 负载均衡
@@ -247,6 +264,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: ☁ WARP前置节点
@@ -263,6 +281,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: 📺 巴哈姆特
@@ -279,6 +298,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: 📺 哔哩哔哩
@@ -295,6 +315,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: 🌏 国内媒体
@@ -311,6 +332,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: 🌍 国外媒体
@@ -327,6 +349,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: 📲 电报信息
@@ -343,6 +366,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: Ⓜ️ 微软云盘
@@ -359,6 +383,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: Ⓜ️ 微软服务
@@ -375,6 +400,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: 🍎 苹果服务
@@ -391,6 +417,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: 📢 谷歌FCM
@@ -407,6 +434,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: 🤖 OpenAI
@@ -423,6 +451,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 - name: 🎯 全球直连
@@ -448,6 +477,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
+  - 🇫🇷 FR-vless | 0-0
   - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 3-0
 rules:
