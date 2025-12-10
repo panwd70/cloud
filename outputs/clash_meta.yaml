@@ -151,21 +151,6 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: 🇫🇷 FR-vless | 0-0
-  type: vless
-  server: 195.154.200.40
-  port: 39433
-  uuid: 3ed2ad90-b217-4872-8aa4-ef69a9b90f1e
-  flow: ''
-  tls: true
-  servername: www.yahoo.com
-  network: xhttp
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /
-  reality-opts:
-    public-key: 1lqZT_67ca5aaviZfHpK55-JdpNG10k2yxkGQwhF9Hg
-    short-id: cbdf01cc
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -180,7 +165,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -195,7 +179,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -209,7 +192,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -223,7 +205,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -237,7 +218,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -251,7 +231,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -265,7 +244,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -279,7 +257,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -293,7 +270,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -307,7 +283,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -321,7 +296,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -344,7 +318,6 @@ proxy-groups:
   - 🏳 Unknown-vless | 3-1
   - 🇳🇱 NL-tuic | 4-1
   - 🇨🇳 TW-anytls | 4-2
-  - 🇫🇷 FR-vless | 0-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
