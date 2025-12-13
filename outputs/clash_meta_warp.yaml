@@ -197,21 +197,21 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇫🇷 FR-vless | 0-0
+- name: 🇨🇳 TW-vless | 1-0
   type: vless
-  server: 62.210.127.177
-  port: 60011
-  uuid: a1f699e4-d7b7-4cdc-8414-1105e08fe4c5
+  server: fan3.394615.xyz
+  port: 34500
+  uuid: 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8
   flow: ''
   tls: true
-  servername: www.pixiv.co.jp
+  servername: www.lovelive-anime.jp
   network: xhttp
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: /
   reality-opts:
-    public-key: BTCE_8R4FJ7wf9mR7PkONJyeihtHqi_TptjC20eMhic
-    short-id: ea22dff3025e4ff8
+    public-key: Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ
+    short-id: 3a1381d1b2cc9e19
 - name: 🏳 Unknown-vless | 2-0
   type: vless
   server: 2001:bc8:32d7:14f::6
@@ -244,7 +244,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: ♻️ 自动选择
   type: url-test
@@ -262,7 +262,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: ⚖ 负载均衡
   type: load-balance
@@ -280,7 +280,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: ☁ WARP前置节点
   type: select
@@ -298,7 +298,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: 📺 巴哈姆特
   type: select
@@ -316,7 +316,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: 📺 哔哩哔哩
   type: select
@@ -334,7 +334,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: 🌏 国内媒体
   type: select
@@ -352,7 +352,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: 🌍 国外媒体
   type: select
@@ -370,7 +370,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: 📲 电报信息
   type: select
@@ -388,7 +388,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -406,7 +406,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -424,7 +424,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: 🍎 苹果服务
   type: select
@@ -442,7 +442,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: 📢 谷歌FCM
   type: select
@@ -460,7 +460,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: 🤖 OpenAI
   type: select
@@ -478,7 +478,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 - name: 🎯 全球直连
   type: select
@@ -505,7 +505,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 0-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇫🇷 FR-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🏳 Unknown-vless | 2-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘

@@ -6,5 +6,5 @@ tuic://909212b8-5d67-4532-885e-7a6b5e724ab8:dongtaiwang.com@62.210.10.113:33998/
 hysteria://51.159.107.20:40121/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 0-0
 hysteria://62.210.127.177:23880/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 2-0
 hysteria://[2604:6600/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🏳 Unknown-Hysteria | 3-0
-vless://a1f699e4-d7b7-4cdc-8414-1105e08fe4c5@62.210.127.177:60011?encryption=none&flow=&security=reality&sni=www.pixiv.co.jp&fp=chrome&pbk=BTCE_8R4FJ7wf9mR7PkONJyeihtHqi_TptjC20eMhic&sid=ea22dff3025e4ff8&type=xhttp&serviceName=/&host=&path=#🇫🇷 FR-vless | 0-0
+vless://8b66e552-e89d-4c4f-bb5a-e3d37bf151b8@fan3.394615.xyz:34500?encryption=none&flow=&security=reality&sni=www.lovelive-anime.jp&fp=chrome&pbk=Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ&sid=3a1381d1b2cc9e19&type=xhttp&serviceName=/&host=&path=#🇨🇳 TW-vless | 1-0
 vless://a1f699e4-d7b7-4cdc-8414-1105e08fe4c5@2001:bc8:32d7:14f::6:60011?encryption=none&flow=&security=reality&sni=www.pixiv.co.jp&fp=chrome&pbk=BTCE_8R4FJ7wf9mR7PkONJyeihtHqi_TptjC20eMhic&sid=ea22dff3025e4ff8&type=xhttp&serviceName=/&host=&path=#🏳 Unknown-vless | 2-0
