@@ -87,9 +87,9 @@ proxies:
       down: 100
 - name: 🏳 Unknown-vless | 3-1
   type: vless
-  server: 2a14:7583:2977::a
-  port: 10494
-  uuid: 9328c397-1485-4bd0-a214-cae442ae828c
+  server: 2001:bc8:32d7:1cb::10
+  port: 12618
+  uuid: 582d6615-b8a3-4674-96c1-5b087563b091
   network: tcp
   udp: true
   tls: true
@@ -97,8 +97,8 @@ proxies:
   servername: itunes.apple.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: LdkOYdsF39LEUZ9pQgQX1ql_UjMjmn308EMs-n27cEQ
-    short-id: 7e5f09e994395f10
+    public-key: Y3mEtIPC1rjwUrwJ4UsqX6QeZnJUoBN6hG2rRSQx4Rw
+    short-id: 8c4e4d7198e3631c
   smux:
     enabled: true
     protocol: h2mux
@@ -192,21 +192,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇩🇪 DE-vless | 0-0
-  type: vless
-  server: 89.144.35.231
-  port: 23889
-  uuid: 2460b5d1-0d74-427d-ad6c-bbe2aaab65cf
-  flow: ''
-  tls: true
-  servername: www.sky.com
-  network: xhttp
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /
-  reality-opts:
-    public-key: JNcfkAqeuYew3pxXliMPe8vDro8JmzbJynQobOipGn4
-    short-id: 8f589d63440b23a0
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -224,7 +209,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -242,7 +226,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -259,7 +242,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -276,7 +258,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -293,7 +274,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -310,7 +290,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -327,7 +306,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -344,7 +322,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -361,7 +338,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -378,7 +354,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -395,7 +370,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -421,7 +395,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
