@@ -30,16 +30,15 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇫🇷 FR-hysteria | 0-1
-  type: hysteria
-  server: ipv4-2.758733.xyz
-  port: 30077
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: 🇳🇱 NL-hysteria2 | 0-1
+  type: hysteria2
+  server: 51.158.194.63
+  port: 32952
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
+  sni: www.microsoft.com
+  skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
 - name: 🇫🇷 FR-vless | 0-2
@@ -218,7 +217,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -235,7 +234,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -252,7 +251,7 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -269,7 +268,7 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -286,7 +285,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -303,7 +302,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -320,7 +319,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -337,7 +336,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -354,7 +353,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -371,7 +370,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -388,7 +387,7 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -405,7 +404,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -422,7 +421,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -439,7 +438,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -465,7 +464,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇫🇷 FR-hysteria | 0-1
+  - 🇳🇱 NL-hysteria2 | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
