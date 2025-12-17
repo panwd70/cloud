@@ -30,15 +30,16 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇳🇱 NL-hysteria2 | 0-1
-  type: hysteria2
-  server: 51.158.194.63
-  port: 32952
-  password: dongtaiwang.com
+- name: 🇫🇷 FR-hysteria | 0-1
+  type: hysteria
+  server: 5.178.101.33
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: 🇫🇷 FR-vless | 0-2
@@ -210,21 +211,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇩🇪 DE-vless | 0-0
-  type: vless
-  server: 89.144.35.231
-  port: 23889
-  uuid: 2460b5d1-0d74-427d-ad6c-bbe2aaab65cf
-  flow: ''
-  tls: true
-  servername: www.sky.com
-  network: xhttp
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /
-  reality-opts:
-    public-key: JNcfkAqeuYew3pxXliMPe8vDro8JmzbJynQobOipGn4
-    short-id: 8f589d63440b23a0
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -232,7 +218,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -243,14 +229,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -261,14 +246,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -279,14 +263,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -297,14 +280,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -315,14 +297,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -333,14 +314,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -351,14 +331,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -369,14 +348,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -387,14 +365,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -405,14 +382,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -423,14 +399,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -441,14 +416,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -459,14 +433,13 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -477,7 +450,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -493,7 +465,7 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇳🇱 NL-hysteria2 | 0-1
+  - 🇫🇷 FR-hysteria | 0-1
   - 🇫🇷 FR-vless | 0-2
   - 🇹🇷 TR-anytls | 1-1
   - 🏳 Unknown-vless | 2-2
@@ -504,7 +476,6 @@ proxy-groups:
   - 🇩🇪 DE-Hysteria | 1-0
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
-  - 🇩🇪 DE-vless | 0-0
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务

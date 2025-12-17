@@ -1,4 +1,4 @@
-hysteria2://dongtaiwang.com@51.158.194.63:32952/?sni=www.microsoft.com&insecure=1#🇳🇱 NL-hysteria2 | 0-1
+hysteria://5.178.101.33:23008/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=11 Mbps&downmbps=55 Mbps&alpn=h3&obfs=#🇫🇷 FR-hysteria | 0-1
 vless://add14a5b-f648-4423-8a1f-8b8f54c0daef@195.154.200.13:17401?encryption=none&flow=None&security=reality&sni=itunes.apple.com&fp=chrome&pbk=IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU&sid=8ef4455ba637425b&type=tcp&serviceName=&host=&path=#🇫🇷 FR-vless | 0-2
 vless://add14a5b-f648-4423-8a1f-8b8f54c0daef@2001:bc8:32d7:181::2:17401?encryption=none&flow=None&security=reality&sni=itunes.apple.com&fp=chrome&pbk=IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU&sid=8ef4455ba637425b&type=tcp&serviceName=&host=&path=#🏳 Unknown-vless | 2-2
 vless://582d6615-b8a3-4674-96c1-5b087563b091@2001:bc8:32d7:1cb::10:12618?encryption=none&flow=None&security=reality&sni=itunes.apple.com&fp=chrome&pbk=Y3mEtIPC1rjwUrwJ4UsqX6QeZnJUoBN6hG2rRSQx4Rw&sid=8c4e4d7198e3631c&type=tcp&serviceName=&host=&path=#🏳 Unknown-vless | 3-1
@@ -7,4 +7,3 @@ hysteria://89.144.35.231:10023/?protocol=udp&insecure=1&peer=apple.com&auth=dong
 hysteria://89.144.35.231:18899/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇩🇪 DE-Hysteria | 1-0
 hysteria://62.210.127.177:23880/?protocol=udp&insecure=1&peer=bing.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇫🇷 FR-Hysteria | 2-0
 hysteria://[2604:6600/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🏳 Unknown-Hysteria | 3-0
-vless://2460b5d1-0d74-427d-ad6c-bbe2aaab65cf@89.144.35.231:23889?encryption=none&flow=&security=reality&sni=www.sky.com&fp=chrome&pbk=JNcfkAqeuYew3pxXliMPe8vDro8JmzbJynQobOipGn4&sid=8f589d63440b23a0&type=xhttp&serviceName=/&host=&path=#🇩🇪 DE-vless | 0-0
