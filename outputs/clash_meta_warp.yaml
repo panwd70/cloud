@@ -226,6 +226,21 @@ proxies:
   reality-opts:
     public-key: JNcfkAqeuYew3pxXliMPe8vDro8JmzbJynQobOipGn4
     short-id: 8f589d63440b23a0
+- name: 🇨🇳 TW-vless | 1-0
+  type: vless
+  server: fan3.394615.xyz
+  port: 34500
+  uuid: 8b66e552-e89d-4c4f-bb5a-e3d37bf151b8
+  flow: ''
+  tls: true
+  servername: www.lovelive-anime.jp
+  network: xhttp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: Yg6kOijRv1IbFcwhY0WmwJ8KW7YTtux4QlQhekEzNEQ
+    short-id: 3a1381d1b2cc9e19
 - name: 🇩🇪 DE-vless | 2-0
   type: vless
   server: 89.144.35.230
@@ -275,6 +290,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: ♻️ 自动选择
@@ -295,6 +311,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: ⚖ 负载均衡
@@ -315,6 +332,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: ☁ WARP前置节点
@@ -335,6 +353,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📺 巴哈姆特
@@ -355,6 +374,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📺 哔哩哔哩
@@ -375,6 +395,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🌏 国内媒体
@@ -395,6 +416,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🌍 国外媒体
@@ -415,6 +437,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📲 电报信息
@@ -435,6 +458,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: Ⓜ️ 微软云盘
@@ -455,6 +479,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: Ⓜ️ 微软服务
@@ -475,6 +500,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🍎 苹果服务
@@ -495,6 +521,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📢 谷歌FCM
@@ -515,6 +542,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🤖 OpenAI
@@ -535,6 +563,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🎯 全球直连
@@ -564,6 +593,7 @@ proxy-groups:
   - 🇫🇷 FR-Hysteria | 2-0
   - 🏳 Unknown-Hysteria | 3-0
   - 🇩🇪 DE-vless | 0-0
+  - 🇨🇳 TW-vless | 1-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 rules:
