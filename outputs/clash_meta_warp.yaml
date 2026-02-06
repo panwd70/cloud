@@ -154,22 +154,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 🇫🇷 FR-vless | 0-0
-  type: vless
-  server: 62.210.127.177
-  port: 60011
-  uuid: a1f699e4-d7b7-4cdc-8414-1105e08fe4c5
-  flow: ''
-  tls: true
-  servername: www.pixiv.co.jp
-  network: xhttp
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /
-  reality-opts:
-    public-key: BTCE_8R4FJ7wf9mR7PkONJyeihtHqi_TptjC20eMhic
-    short-id: ea22dff3025e4ff8
-- name: 🇨🇳 TW-vless | 1-0
+- name: 🇨🇳 TW-vless | 0-0
   type: vless
   server: fan3.394615.xyz
   port: 34500
@@ -228,8 +213,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: ♻️ 自动选择
@@ -245,8 +229,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: ⚖ 负载均衡
@@ -262,8 +245,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: ☁ WARP前置节点
@@ -279,8 +261,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📺 巴哈姆特
@@ -296,8 +277,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📺 哔哩哔哩
@@ -313,8 +293,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🌏 国内媒体
@@ -330,8 +309,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🌍 国外媒体
@@ -347,8 +325,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📲 电报信息
@@ -364,8 +341,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: Ⓜ️ 微软云盘
@@ -381,8 +357,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: Ⓜ️ 微软服务
@@ -398,8 +373,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🍎 苹果服务
@@ -415,8 +389,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 📢 谷歌FCM
@@ -432,8 +405,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🤖 OpenAI
@@ -449,8 +421,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 - name: 🎯 全球直连
@@ -475,8 +446,7 @@ proxy-groups:
   - 🏳 Unknown-vless | 8-1
   - 🇩🇪 DE-tuic | 9-1
   - 🏳 Unknown-tuic | 9-2
-  - 🇫🇷 FR-vless | 0-0
-  - 🇨🇳 TW-vless | 1-0
+  - 🇨🇳 TW-vless | 0-0
   - 🇩🇪 DE-vless | 2-0
   - 🏳 Unknown-vless | 3-0
 rules:
