@@ -1,3 +1,9 @@
-https://raw.githubusercontent.com/Alvin9999-newpac/PAC/1eada02069f93c0878ffea977e3f075f410db2ca/backup/img/1/2/ip/clash.meta2/1/config.yaml
-https://raw.githubusercontent.com/Alvin9999-newpac/PAC/1eada02069f93c0878ffea977e3f075f410db2ca/backup/img/1/2/ip/clash.meta2/2/config.yaml
-https://raw.githubusercontent.com/Alvin9999-newpac/PAC/1eada02069f93c0878ffea977e3f075f410db2ca/backup/img/1/2/ip/clash.meta2/3/config.yaml
+# https://raw.githubusercontent.com/Alvin9999-newpac/PAC/1eada02069f93c0878ffea977e3f075f410db2ca/backup/img/1/2/ip/clash.meta2/1/config.yaml
+# https://raw.githubusercontent.com/Alvin9999-newpac/PAC/1eada02069f93c0878ffea977e3f075f410db2ca/backup/img/1/2/ip/clash.meta2/2/config.yaml
+# https://raw.githubusercontent.com/Alvin9999-newpac/PAC/1eada02069f93c0878ffea977e3f075f410db2ca/backup/img/1/2/ip/clash.meta2/3/config.yaml
+https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml
+https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml
+https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml
+https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml
+https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.meta.yml
+https://fastly.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.meta.yml
