@@ -56,7 +56,15 @@ proxies:
   sni: 🔒
   tls: false
   type: hysteria2
-- name: 🇲🇩 MD-hysteria2 | 4-2
+- name: 🇺🇸 US-hysteria2 | 4-2
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg2.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg2.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: 🇲🇩 MD-hysteria2 | 8-2
   password: 41aec03d-4345-4bff-9bab-69d36d80033c
   port: 2056
   server: ru.eyucdn.xyz
@@ -74,7 +82,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -84,7 +93,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -94,7 +104,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -104,7 +115,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -114,7 +126,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -124,7 +137,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -134,7 +148,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -144,7 +159,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: 📲 电报信息
   type: select
   proxies:
@@ -154,7 +170,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -164,7 +181,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -174,7 +192,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -184,7 +203,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -194,7 +214,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -204,7 +225,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -223,7 +245,8 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇲🇩 MD-hysteria2 | 4-2
+  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇲🇩 MD-hysteria2 | 8-2
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
