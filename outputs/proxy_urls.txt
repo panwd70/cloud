@@ -2,4 +2,3 @@ vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAzLTEiLCAi
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZmYzIFVua25vd24tdm1lc3MgfCAzLTIiLCAiYWRkIjogIjEyNy4wLjAuNTMiLCAicG9ydCI6ICI4MSIsICJpZCI6ICI4ODg4ODg4OC04ODg4LTg4ODgtODg4OC04ODg4ODg4ODg4ODgiLCAiYWlkIjogMCwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiIiwgInBhdGgiOiAiIiwgInRscyI6ICIiLCAic25pIjogIiIsICJhbHBuIjogIiJ9
 hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk:1743/?sni=🔒&insecure=1#🇺🇸 US-hysteria2 | 4-1
 hysteria2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@mg2.mangshe.xyz:2056/?sni=mg2.mangshe.xyz&insecure=1#🇺🇸 US-hysteria2 | 4-2
-hysteria2://41aec03d-4345-4bff-9bab-69d36d80033c@ru.eyucdn.xyz:2056/?sni=ru.eyucdn.xyz&insecure=1#🇲🇩 MD-hysteria2 | 8-2
