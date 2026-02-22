@@ -11,141 +11,216 @@ profile:
   tracing: true
 global-client-fingerprint: chrome
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🏳 Unknown-vmess | 3-1
-  network: tcp
-  port: '80'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: 🏳 Unknown-vmess | 3-2
-  network: tcp
-  port: '81'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- name: 🇺🇸 US-hysteria2 | 4-1
-  password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
-  port: 1743
-  server: c37b0be5n-t3kyo0-t3lvgh-2gok.la.shifen.uk
+- name: 🇫🇷 FR-hysteria | 0-1
+  type: hysteria
+  server: 5.178.101.33
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
-  sni: 🔒
-  tls: false
-  type: hysteria2
-- name: 🇫🇷 FR-hysteria2 | 4-2
-  password: 545fb4e9-5794-4e20-be0c-e6d8689f91ac
-  port: 35000
-  server: 129.151.251.122
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: 🇫🇷 FR-vless | 0-2
+  type: vless
+  server: 195.154.200.13
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
+- name: 🇹🇷 TR-anytls | 1-1
+  type: anytls
+  server: 45.221.98.14
+  port: 59901
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
   skip-cert-verify: true
-  sni: www.lamer.com.hk
-  tls: false
-  type: hysteria2
+- name: 🏳 Unknown-vless | 2-2
+  type: vless
+  server: 2001:bc8:32d7:181::2
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
+- name: 🏳 Unknown-vless | 3-1
+  type: vless
+  server: 2001:bc8:32d7:1cb::10
+  port: 12618
+  uuid: 582d6615-b8a3-4674-96c1-5b087563b091
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Y3mEtIPC1rjwUrwJ4UsqX6QeZnJUoBN6hG2rRSQx4Rw
+    short-id: 8c4e4d7198e3631c
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: 📺 哔哩哔哩
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: 🌏 国内媒体
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: 📢 谷歌FCM
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: 🤖 OpenAI
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -160,10 +235,11 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🏳 Unknown-vmess | 3-1
-  - 🏳 Unknown-vmess | 3-2
-  - 🇺🇸 US-hysteria2 | 4-1
-  - 🇫🇷 FR-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria | 0-1
+  - 🇫🇷 FR-vless | 0-2
+  - 🇹🇷 TR-anytls | 1-1
+  - 🏳 Unknown-vless | 2-2
+  - 🏳 Unknown-vless | 3-1
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
