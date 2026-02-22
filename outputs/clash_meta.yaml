@@ -37,12 +37,12 @@ proxies:
   sni: 🔒
   tls: false
   type: hysteria2
-- name: 🇺🇸 US-hysteria2 | 4-2
-  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
-  port: 2056
-  server: mg2.mangshe.xyz
+- name: 🇫🇷 FR-hysteria2 | 4-2
+  password: 545fb4e9-5794-4e20-be0c-e6d8689f91ac
+  port: 35000
+  server: 129.151.251.122
   skip-cert-verify: true
-  sni: mg2.mangshe.xyz
+  sni: www.lamer.com.hk
   tls: false
   type: hysteria2
 proxy-groups:
@@ -54,7 +54,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -64,7 +64,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -73,7 +73,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -82,7 +82,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -91,7 +91,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: 📲 电报信息
   type: select
   proxies:
@@ -100,7 +100,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -109,7 +109,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -118,7 +118,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -127,7 +127,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -136,7 +136,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -145,7 +145,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -163,7 +163,7 @@ proxy-groups:
   - 🏳 Unknown-vmess | 3-1
   - 🏳 Unknown-vmess | 3-2
   - 🇺🇸 US-hysteria2 | 4-1
-  - 🇺🇸 US-hysteria2 | 4-2
+  - 🇫🇷 FR-hysteria2 | 4-2
 rules:
 - DOMAIN-KEYWORD,copilot,Ⓜ️ 微软云盘
 - DOMAIN-SUFFIX,microsoft.com,Ⓜ️ 微软服务
