@@ -37,3 +37,4 @@ proxies:
       host: panwd.wasmer.app
       tls: true
       path: /82dc536b
+      skip-cert-verify: true
