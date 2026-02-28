@@ -1,17 +1,17 @@
 proxies:
   - name: SG-Hetzner_Online_vless
     type: vless
-    server: 5.223.76.201
+    server: panwd.wasmer.app
     port: 443
     uuid: 82dc536b-d1c4-4ba8-b297-12a1c3a84b10
     network: ws
     tls: false
-    servername: 5.223.76.201
+    servername: panwd.wasmer.app
     client-fingerprint: chrome
     ws-opts:
       path: /82dc536b
       headers:
-        Host: 5.223.76.201
+        Host: panwd.wasmer.app
 
   - name: SG-Hetzner_Online_trojan
     type: trojan
