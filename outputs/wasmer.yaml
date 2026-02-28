@@ -27,15 +27,15 @@ proxies:
 
   - name: SG-Hetzner_Online_ss
     type: ss
-    server: 5.223.76.201
+    server: panwd.wasmer.app
     port: 443
     cipher: none
     password: 82dc536b-d1c4-4ba8-b297-12a1c3a84b10
     plugin: v2ray-plugin
     plugin-opts:
       mode: websocket
-      host: 5.223.76.201
+      host: panwd.wasmer.app
       path: /82dc536b
-      sni: 5.223.76.201
+      sni: panwd.wasmer.app
       skip-cert-verify: true
       mux: 0
