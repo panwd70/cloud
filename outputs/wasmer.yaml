@@ -14,18 +14,16 @@ proxies:
 
   - name: SG-Hetzner_Online_trojan
     type: trojan
-    server: 5.223.76.201
+    server: panwd.wasmer.app
     port: 443
     password: 82dc536b-d1c4-4ba8-b297-12a1c3a84b10
     network: ws
     tls: true
     client-fingerprint: chrome
-    skip-cert-verify: true
-    alpn: http/1.1
     ws-opts:
       path: /82dc536b
       headers:
-        Host: 5.223.76.201
+        Host: panwd.wasmer.app
 
   - name: SG-Hetzner_Online_ss
     type: ss
