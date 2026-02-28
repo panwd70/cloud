@@ -5,7 +5,7 @@ proxies:
     port: 443
     uuid: 82dc536b-d1c4-4ba8-b297-12a1c3a84b10
     network: ws
-    tls: false
+    tls: true
     servername: panwd.wasmer.app
     client-fingerprint: chrome
     ws-opts:
