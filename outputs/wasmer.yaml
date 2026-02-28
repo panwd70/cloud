@@ -20,7 +20,7 @@ proxies:
     network: ws
     tls: true
     client-fingerprint: chrome
-    skip-cert-verify: false
+    skip-cert-verify: true
     alpn: http/1.1
     ws-opts:
       path: /82dc536b
