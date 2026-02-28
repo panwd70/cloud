@@ -35,5 +35,5 @@ proxies:
     plugin-opts:
       mode: websocket
       host: panwd.wasmer.app
-      tls: true
+      tls: false
       path: /82dc536b
